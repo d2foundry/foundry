@@ -1,0 +1,63 @@
+button.checkboxRoot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  padding: 0;
+  transition: 150ms ease;
+  transition-property: background-color, border-color;
+  border: 1px solid var(--grayBorder);
+  border-radius: var(--border-radius-xs);
+  outline: 0;
+  background-color: var(--grayBg);
+  appearance: none;
+
+  &:hover {
+    border-color: var(--grayBorderHover);
+    background-color: var(--grayBgHover);
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px var(--accentFocusRing);
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      /* Fallback for browsers without :focus-visible support */
+      box-shadow: 0 0 0 2px var(--accentFocusRing);
+    }
+  }
+
+  &[data-state="checked"] {
+    border-color: var(--accentBorder);
+    background-color: var(--accentSolid);
+
+    &:hover {
+      border-color: var(--accentBorderHover);
+      background-color: var(--accentSolidHover);
+    }
+  }
+
+  &[disabled] {
+    border-color: var(--grayLine);
+    background-color: var(--grayBg);
+    color: var(--graySolid);
+    cursor: not-allowed;
+
+    & + label {
+      color: var(--grayText);
+      cursor: not-allowed;
+    }
+  }
+}
+
+.checkboxIndicator {
+  display: inline-flex;
+  color: var(--grayText);
+
+  &[data-state="checked"] {
+    color: var(--accentTextContrast);
+  }
+}

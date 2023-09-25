@@ -1,0 +1,13 @@
+.label {
+  display: block;
+  color: var(--grayTextContrast);
+  font-family: var(--font-text);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-label);
+  line-height: 1;
+}
+
+.sm {
+  font-size: var(--font-size-xs);
+}

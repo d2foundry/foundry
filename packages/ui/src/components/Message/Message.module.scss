@@ -1,0 +1,21 @@
+.message {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: min-content;
+  padding: var(--spacing-2);
+  border: 1px solid var(--accentBorder);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--accentBg);
+  color: var(--accentText);
+  font-size: var(--font-size-body-sm);
+  line-height: 1rem;
+  gap: var(--spacing-1_5);
+}
+
+.messageHeader {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: var(--spacing-1_5);
+}

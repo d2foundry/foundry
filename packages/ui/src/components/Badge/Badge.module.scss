@@ -1,0 +1,25 @@
+.badge {
+  display: inline;
+  padding: var(--spacing-0_5) var(--spacing-1);
+  border: 1px solid var(--accentBorder);
+  border-radius: var(--border-radius-pill);
+  background-color: var(--accentBg);
+  color: var(--accentText);
+  font-size: 0.75rem;
+  line-height: 1;
+
+  // @media (width >= 768px) {
+  // }
+}
+
+.green {
+  border-color: var(--green-7);
+  background-color: var(--green-3);
+  color: var(--green-11);
+}
+
+.purple {
+  border-color: var(--purple7);
+  background-color: var(--purple3);
+  color: var(--purple11);
+}

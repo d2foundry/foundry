@@ -1,0 +1,22 @@
+{
+  "buildCommand": "turbo build",
+  "rewrites": [
+    {
+      "source": "/stats/:match*",
+      "destination": "https://umami-nu-umber.vercel.app/:match*"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "nightly.d2foundry.gg"
+        }
+      ],
+      "permanent": false,
+      "destination": "https://d2foundry.gg/nightly"
+    }
+  ]
+}

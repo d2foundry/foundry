@@ -1,0 +1,297 @@
+.toolbar {
+  display: flex;
+
+  // flex-direction: column;
+  // justify-content: flex-end;
+  width: min-content;
+
+  // align-items: center;
+  // align-items: center;
+  // line-height: 1.25rem;
+  gap: var(--spacing-1);
+
+  // background-color: var(--gray-3);
+  // padding: var(--spacing-2) 0 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  line-height: 1.25rem;
+
+  // gap: var(--spacing-1);
+}
+
+.popoverForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.popoverField {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.toolbarSeparator {
+  width: 1px;
+  height: var(--spacing-3);
+  margin: auto var(--spacing-1);
+  border-left: 1px solid var(--grayLine);
+}
+
+.toolbarButton {
+  // flex: 0;
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: auto;
+  height: auto;
+  min-height: 1.75rem;
+  padding: 0 var(--spacing-2);
+
+  // padding-bottom: var(--spacing-0_5);
+  transition: 150ms ease;
+  transition-property: border-color, color, background;
+  // border: 1px solid var(--grayBorder);
+  // border-radius: var(--border-radius-xs);
+  // background-color: var(--grayBg);
+
+  // padding-top: var(--spacing-0_5);
+  box-shadow: none;
+  color: var(--gray11);
+  font-size: var(--font-size-regular);
+  line-height: calc(1.75rem - 2px);
+  white-space: nowrap;
+  cursor: pointer;
+
+  // height: 100%;
+  &:hover {
+    z-index: 10;
+    border-color: var(--grayBorderHover);
+    background-color: var(--grayBgHover);
+    color: var(--gray12);
+  }
+
+  &.dangerHover:hover {
+    border-color: var(--red-8);
+    background-color: var(--red-4);
+    color: var(--red-12);
+  }
+
+  &.dangerHover:active {
+    background-color: var(--red-5);
+  }
+
+  &:active {
+    background-color: var(--grayBgActive);
+  }
+
+  &[data-state="on"],
+  &.active {
+    border-color: var(--accentBorder);
+    background-color: var(--accentBgActive);
+    color: var(--gray12);
+
+    &:hover {
+      border-color: var(--accentBorderHover);
+      background-color: var(--accentBgHover);
+    }
+
+    &:active {
+      background-color: var(--accentBgActive);
+    }
+  }
+
+  &.pvp[data-state="on"],
+  &.pvp.active {
+    border-color: var(--red-7);
+    background-color: var(--red-5);
+    color: var(--red-12);
+
+    &:hover {
+      border-color: var(--red-8);
+      background-color: var(--red-4);
+    }
+
+    &:active {
+      background-color: var(--red-5);
+    }
+  }
+}
+
+.toggleGroup {
+  display: flex;
+  z-index: 0;
+  // flex: 1;
+
+  // grid-template-columns: repeat(4, min-content);
+  width: auto;
+
+  // justify-content: center;
+  // > * {
+  //   font-size: 0.75rem !important;
+  //   min-height: 1.75rem;
+  //   max-height: 1.75rem;
+  //   margin: 0;
+
+  //   height: 100%;
+  // }
+  svg {
+    width: 15px;
+    height: 15px;
+
+    // color: var(--gray11);
+  }
+
+  & > button:not(:last-of-type),
+  & > span:not(:last-of-type) button {
+    border-right-width: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    &[data-state="on"] {
+      border-right-width: 1px;
+    }
+
+    &[data-state="on"] + button,
+    &[data-state="on"] + span button {
+      border-left-width: 0;
+    }
+  }
+
+  & > span:not(:last-of-type) > button[data-state="on"] {
+    margin-right: -1px;
+    z-index: 2;
+  }
+
+  & > button:not(:first-of-type),
+  & > span:not(:first-of-type) button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  // align-items: center;
+  // justify-content: center;
+  // height: 100%;
+}
+
+.comboEnhance {
+  display: grid;
+  grid-template-columns: max-content min-content;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  > * {
+    height: 100%;
+    min-height: 1.75rem;
+    max-height: 1.75rem;
+    margin: 0;
+    font-size: 0.875rem !important;
+    font-weight: 500;
+  }
+}
+
+.enhanceLeft {
+  // flex: 0;
+  display: inline-flex;
+  position: relative;
+
+  // padding-top: var(--spacing-0_5);
+  padding-left: var(--spacing-1_5);
+  border: 1px solid var(--grayBorder);
+  background-color: var(--grayBg);
+  box-shadow: none;
+  color: var(--gray11);
+  line-height: calc(1.75rem - 2px);
+
+  // border-right: none;
+  gap: var(--spacing-1);
+
+  // span {
+  //   margin-top: 2px;
+  // }
+  svg {
+    margin-bottom: 0;
+  }
+
+  // padding-bottom: var(--spacing-0_5);
+  // height: 100%;
+  &:hover {
+    border-color: var(--grayBorderHover);
+    background-color: var(--grayBgHover);
+    color: var(--gray12);
+  }
+
+  // border-radius: var(--border-radius-xs) 0 0 var(--border-radius-xs);
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   right: 0;
+  //   top: 0;
+  //   bottom: 0;
+  //   margin: auto;
+  //   height: 70%;
+  //   border-left: 1px solid var(--grayBorder);
+  // }
+
+  &[data-state="on"],
+  &.active {
+    border-color: var(--accentBorder);
+    background-color: var(--accentBgActive);
+    color: var(--gray12);
+
+    &:hover {
+      border-color: var(--accentBorderHover);
+      background-color: var(--accentBgHover);
+    }
+
+    &:active {
+      background-color: var(--accentBgActive);
+    }
+  }
+}
+
+.enhanceRight {
+  flex: 0;
+  width: auto;
+
+  // border: 1px solid var(--white-6);
+  // height: 100% !important;
+  margin: 0;
+  padding: 0 var(--spacing-1);
+  border: 1px solid var(--grayBorder);
+  border-left: none;
+  border-radius: 0 var(--border-radius-xs) var(--border-radius-xs) 0;
+  background-color: var(--grayBg);
+  color: var(--gray11);
+}
+
+.enhanceButton {
+  display: flex;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: min-content;
+  margin: 0;
+
+  // margin-left: auto;
+  // flex: 1;
+  padding: var(--spacing-1) var(--spacing-1);
+  border: none;
+  border-radius: var(--border-radius-xs);
+  background: none;
+
+  // background-color: var(--gray-4);
+  color: var(--foreground-80);
+  font-size: var(--font-size-body-sm);
+  cursor: pointer;
+  gap: var(--spacing-0_5);
+}
+
+.enhanceButton:hover {
+  background-color: var(--gray-4);
+  color: var(--forground);
+}

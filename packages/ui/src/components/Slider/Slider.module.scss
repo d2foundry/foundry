@@ -1,0 +1,120 @@
+.sliderRoot {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 200px;
+  user-select: none;
+  touch-action: none;
+}
+
+.sliderRoot[data-orientation="horizontal"] {
+  height: 20px;
+}
+
+.sliderRoot[data-orientation="vertical"] {
+  flex-direction: column;
+  width: 20px;
+  height: 100px;
+}
+
+// .slider-r
+
+.sliderTrack {
+  // border: 1px solid var(--grayBorder);
+  position: relative;
+  flex-grow: 1;
+  border-radius: var(--border-radius-pill);
+  background-color: var(--grayBorder);
+}
+
+.sliderRange {
+  position: absolute;
+  border-radius: var(--border-radius-pill);
+  background-color: var(--accentSolid);
+}
+
+.sliderTrack[data-orientation="horizontal"] {
+  height: 4px;
+
+  & .sliderRange {
+    height: 100%;
+  }
+}
+
+.sliderTrack[data-orientation="vertical"] {
+  width: 4px;
+
+  & .sliderRange {
+    width: 100%;
+  }
+}
+
+.sliderThumb {
+  display: block;
+  width: var(--spacing-2);
+  height: var(--spacing-2);
+  transition: var(--transition-medium);
+  transition-property: background-color, transform;
+  border-radius: var(--border-radius-circle);
+  background-color: var(--grayTextContrast);
+
+  // border: 1px solid var(--graySolid);
+  box-shadow: 0 -2px 10px var(--blackA7);
+  cursor: ew-resize;
+}
+
+.sliderThumb.pill {
+  display: block;
+  width: var(--spacing-1);
+  height: 1.25rem;
+  transition: var(--transition-medium);
+  transition-property: background-color, transform;
+  border-radius: var(--border-radius-pill);
+  background-color: var(--grayTextContrast);
+
+  // border: 1px solid var(--graySolid);
+  box-shadow: 0 -2px 10px var(--blackA7);
+}
+
+.sliderThumb:hover {
+  transform: scale(1.1);
+  background-color: var(--grayTextContrast);
+
+  // border-color: var(--grayBorderHover);
+}
+
+.sliderThumb:active {
+  outline: none;
+  background-color: var(--grayText);
+}
+
+.sliderThumb:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accentFocusRing);
+}
+
+.ticks {
+  display: flex;
+  position: absolute;
+  right: 0;
+  left: 0;
+  justify-content: space-between;
+  height: var(--spacing-0_5);
+
+  // z-index: -1;
+  // bottom: 0;
+  padding-inline: var(--spacing-0_25);
+}
+
+.tick {
+  width: 3px;
+
+  // border-radius: 2px;
+  background-color: var(--appBg);
+}
+
+.tick:first-child,
+.tick:last-child {
+  // display: none;
+  visibility: hidden;
+}

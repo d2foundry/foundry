@@ -1,0 +1,18 @@
+{
+  "name": "oracle_engine",
+  "version": "1.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d2foundry/oracle_engine/"
+  },
+  "files": [
+    "oracle_engine_bg.wasm",
+    "oracle_engine.js",
+    "oracle_engine.d.ts"
+  ],
+  "module": "oracle_engine.js",
+  "types": "oracle_engine.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

@@ -1,0 +1,99 @@
+@keyframes slideUpAndFade {
+  from {
+    transform: translateY(2px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRightAndFade {
+  from {
+    transform: translateX(-2px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDownAndFade {
+  from {
+    transform: translateY(-2px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeftAndFade {
+  from {
+    transform: translateX(2px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.tooltipContent {
+  z-index: 999;
+  max-width: 280px;
+  padding: var(--spacing-1) var(--spacing-1_5);
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid var(--grayBorder);
+  border-radius: 4px;
+  background-color: var(--elevatedBgSubtle);
+  box-shadow: var(--shadow);
+  color: var(--grayTextContrast);
+  font-size: 0.75rem;
+  line-height: 1;
+  line-height: 1rem;
+  text-align: center;
+  white-space: pre-wrap;
+  user-select: none;
+  will-change: transform, opacity;
+}
+
+.tooltipContent[data-state="delayed-open"][data-side="top"] {
+  animation-name: slideDownAndFade;
+}
+
+.tooltipContent[data-state="delayed-open"][data-side="right"] {
+  animation-name: slideLeftAndFade;
+}
+
+.tooltipContent[data-state="delayed-open"][data-side="bottom"] {
+  animation-name: slideUpAndFade;
+}
+
+.tooltipContent[data-state="delayed-open"][data-side="left"] {
+  animation-name: slideRightAndFade;
+}
+
+.childWrapper {
+  display: inline-flex;
+  height: min-content;
+}
+
+.tooltipPortal {
+  z-index: 999;
+}
+
+.tooltipArrow {
+  stroke: var(--grayBorder);
+  fill: var(--elevatedBgSubtle);
+
+  // stroke-width: 1px;
+}
