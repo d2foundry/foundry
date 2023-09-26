@@ -1,4 +1,6 @@
-module.exports = {
+const { withContentlayer } = require("next-contentlayer");
+const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ["ui"],
+  transpilePackages: ["@foundry/ui"],
 };
+module.exports = withContentlayer(nextConfig);

@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@foundry/web",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,18 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@foundry/ui": "workspace:*",
+    "@radix-ui/react-icons": "^1.1.1",
+    "@react-spring/web": "^9.6.1",
+    "bungie-api-ts": "^5.0.0",
+    "contentlayer": "^0.3.4",
+    "date-fns": "^2.30.0",
     "next": "^13.4.19",
+    "next-contentlayer": "^0.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
+    "@foundry/eslint-config-custom": "workspace:*",
+    "@foundry/tsconfig": "workspace:*",
     "@next/eslint-plugin-next": "^13.4.19",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
-    "eslint-config-custom": "workspace:*",
-    "tsconfig": "workspace:*",
     "typescript": "^4.5.3"
   }
 }
