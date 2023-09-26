@@ -1,0 +1,59 @@
+@import "./colors.scss";
+
+:root {
+  --accent-base: var(--blue-1);
+  --accent-bg-subtle: var(--blue-2);
+  --accent-bg: var(--blue-3);
+  --accent-bg-hover: var(--blue-4);
+  --accent-bg-active: var(--blue-5);
+  --accent-line: var(--blue-6);
+  --accent-border: var(--blue-7);
+  --accent-border-hover: var(--blue-8);
+  --accent-focus-ring: var(--blue-8);
+  --accent-solid: var(--blue-9);
+  --accent-solid-hover: var(--blue-10);
+  --accent-text: var(--blue-11);
+  --accent-text-contrast: var(--blue-12);
+
+  --success-base: var(--green-1);
+  --success-bg-subtle: var(--green-2);
+  --success-bg: var(--green-3);
+  --success-bg-hover: var(--green-4);
+  --success-bg-active: var(--green-5);
+  --success-line: var(--green-6);
+  --success-border: var(--green-7);
+  --success-border-hover: var(--green-8);
+  --success-focus-ring: var(--green-8);
+  --success-solid: var(--green-9);
+  --success-solid-hover: var(--green-10);
+  --success-text: var(--green-11);
+  --success-text-contrast: var(--green-12);
+
+  --warning-base: var(--yellow-1);
+  --warning-bg-subtle: var(--yellow-2);
+  --warning-bg: var(--yellow-3);
+  --warning-bg-hover: var(--yellow-4);
+  --warning-bg-active: var(--yellow-5);
+  --warning-line: var(--yellow-6);
+  --warning-border: var(--yellow-7);
+  --warning-border-hover: var(--yellow-8);
+  --warning-focus-ring: var(--yellow-8);
+  --warning-solid: var(--yellow-9);
+  --warning-solid-hover: var(--yellow-10);
+  --warning-text: var(--yellow-11);
+  --warning-text-contrast: var(--yellow-12);
+
+  --danger-base: var(--red-1);
+  --danger-bg-subtle: var(--red-2);
+  --danger-bg: var(--red-3);
+  --danger-bg-hover: var(--red-4);
+  --danger-bg-active: var(--red-5);
+  --danger-line: var(--red-6);
+  --danger-border: var(--red-7);
+  --danger-border-hover: var(--red-8);
+  --danger-focus-ring: var(--red-8);
+  --danger-solid: var(--red-9);
+  --danger-solid-hover: var(--red-10);
+  --danger-text: var(--red-11);
+  --danger-text-contrast: var(--red-12);
+}

@@ -1,5 +1,5 @@
 {
-  "name": "oracle_engine",
+  "name": "@foundry/oracle-engine",
   "version": "1.0.2",
   "repository": {
     "type": "git",

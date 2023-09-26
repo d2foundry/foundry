@@ -1,18 +1,24 @@
 {
-  "name": "ui",
+  "name": "@foundry/ui",
   "version": "0.0.0",
-  "main": "./src/index.tsx",
-  "types": "./src/index.tsx",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "exports": {
+    "./components": {
+      "import": "./components/index.tsx",
+      "types": "./components/index.tsx"
+    },
+    "./utils": {
+      "types": "./utils/index.ts",
+      "import": "./utils/index.ts"
+    }
+  },
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
     "generate:component": "turbo gen react-component"
   },
-  "devDependencies": {
-    "@turbo/gen": "^1.10.12",
-    "@types/node": "^20.5.2",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
+  "dependencies": {
     "@radix-ui/react-accordion": "^1.1.0",
     "@radix-ui/react-aspect-ratio": "^1.0.1",
     "@radix-ui/react-avatar": "^1.0.2",
@@ -38,10 +44,17 @@
     "clsx": "^1.2.1",
     "cmdk": "^0.2.0",
     "command-score": "^0.1.2",
-    "eslint-config-custom": "workspace:*",
     "react": "^18.2.0",
-    "sass": "^1.56.1",
-    "tsconfig": "workspace:*",
-    "typescript": "^4.5.2"
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.4.19",
+    "@turbo/gen": "^1.10.12",
+    "@types/node": "^17.0.12",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "@foundry/eslint-config-custom": "workspace:*",
+    "@foundry/tsconfig": "workspace:*",
+    "typescript": "^4.5.3"
   }
 }

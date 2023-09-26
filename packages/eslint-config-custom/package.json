@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-custom",
+  "name": "@foundry/eslint-config-custom",
   "license": "MIT",
   "version": "0.0.0",
   "private": true,
