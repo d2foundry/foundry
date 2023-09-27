@@ -9,19 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@foundry/search": "github:d2foundry/search.git",
     "@foundry/ui": "workspace:*",
     "@radix-ui/react-icons": "^1.1.1",
     "@react-spring/web": "^9.6.1",
     "@types/mdx": "^2.0.7",
+    "better-sqlite3": "^8.6.0",
     "bungie-api-ts": "^5.0.0",
     "contentlayer": "^0.3.4",
     "date-fns": "^2.30.0",
+    "drizzle-orm": "^0.28.6",
     "next": "^13.4.19",
     "next-contentlayer": "^0.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "server-only": "^0.0.1",
-    "@foundry/search": "github:d2foundry/search.git"
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@foundry/eslint-config-custom": "workspace:*",
@@ -30,6 +32,7 @@
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "drizzle-kit": "^0.19.13",
     "typescript": "^4.5.3"
   }
 }
