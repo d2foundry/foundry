@@ -1,0 +1,73 @@
+---
+title: Dialog
+description: A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.
+---
+
+<ComponentPreview>
+  <Dialog>
+    <DialogTrigger asChild>
+      <Button>Open</Button>
+    </DialogTrigger>
+    <DialogContent>
+      <DialogHeader>
+        <DialogTitle>Dialog</DialogTitle>
+        <DialogDescription>Hello! This is a dialog.</DialogDescription>
+      </DialogHeader>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          paddingBlock: "var(--spacing-2)",
+          gap: "var(--spacing-3)",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "var(--spacing-1)",
+          }}
+        >
+          <Label htmlFor="my-input">Display name</Label>
+          <Input placeholder="Lord Shaxx" id="my-input" />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "var(--spacing-1)",
+          }}
+        >
+          <Label htmlFor="my-input">Favorite color</Label>
+          <Input placeholder="Chartreuse" id="my-input" />
+        </div>
+      </div>
+      <DialogFooter>
+        <Button>Alright</Button>
+      </DialogFooter>
+    </DialogContent>
+  </Dialog>
+</ComponentPreview>
+
+## Usage
+
+```tsx
+import { Dialog, DialogTrigger, DialogContent } from "@foundry-ui/Dialog";
+```
+
+```tsx
+<Dialog>
+  <DialogTrigger asChild>
+    <Button>Open</Button>
+  </DialogTrigger>
+  <DialogContent>
+    <DialogHeader>
+      <DialogTitle>Dialog</DialogTitle>
+      <DialogDescription>Hello! This is a dialog.</DialogDescription>
+    </DialogHeader>
+    <DialogFooter>
+      <Button>Alright</Button>
+    </DialogFooter>
+  </DialogContent>
+</Dialog>
+```

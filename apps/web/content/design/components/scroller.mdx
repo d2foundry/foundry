@@ -1,0 +1,59 @@
+---
+title: Scroller
+description: Augments native scroll functionality for custom, cross-browser styling.
+---
+
+<ComponentPreview>
+  <Scroller
+    style={{
+      height: "var(--spacing-40)",
+      width: "var(--spacing-30)",
+      border: "1px solid var(--grayBorder)",
+      borderRadius: "var(--border-radius-sm)",
+    }}
+  >
+    <div style={{ padding: "var(--spacing-2)" }}>
+      <h4
+        style={{
+          fontSize: "var(--font-size-regular)",
+          margin: 0,
+          marginBottom: "var(--spacing-1)",
+          lineHeight: 1,
+        }}
+      >
+        <>Tags</>
+      </h4>
+      {Array.from({ length: 50 })
+        .map((_, i, a) => `v1.2.0-beta.${a.length - i}`)
+        .map((tag) => (
+          <div
+            style={{
+              fontSize: "var(--font-size-regular)",
+              paddingBlock: "var(--spacing-0-half)",
+              borderBottom: "1px solid var(--grayLine)",
+            }}
+            key={tag}
+          >
+            {tag}
+          </div>
+        ))}
+    </div>
+
+  </Scroller>
+</ComponentPreview>
+
+## Usage
+
+```tsx
+import { Scroller } from "@foundry-ui/Scroller";
+```
+
+```tsx
+<Scroller>
+  <List>
+    {items.map((item) => (
+      <ListItem key={item.key}>{item.name}</ListItem>
+    ))}
+  </List>
+</Scroller>
+```

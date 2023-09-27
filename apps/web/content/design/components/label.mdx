@@ -1,0 +1,27 @@
+---
+title: Label
+description: Renders an accessible label associated with controls.
+---
+
+<ComponentPreview>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      gap: "var(--spacing-1)",
+    }}
+  >
+    <Label htmlFor="my-input">Display name</Label>
+    <Input id="my-input" placeholder="Placeholder..." />
+  </div>
+</ComponentPreview>
+
+## Usage
+
+```tsx
+import { Label } from "@foundry-ui/Label";
+```
+
+```tsx
+<Label htmlFor="my-input">Display name</Label>
+```

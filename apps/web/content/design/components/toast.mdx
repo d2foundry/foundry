@@ -1,0 +1,41 @@
+---
+title: Toast
+description: A succinct message that is displayed temporarily.
+---
+
+<ComponentPreview>
+  <ToastDemo />
+</ComponentPreview>
+
+## Usage
+
+```tsx
+import { useToast } from "@foundry-ui/Toast";
+```
+
+```tsx {2,7-10}
+export const ToastDemo = () => {
+  const { toast } = useToast();
+
+  return (
+    <Button
+      onClick={() => {
+        toast({
+          title: "All toasters",
+          description: "Toast toast!",
+        });
+      }}
+    >
+      You know what they say...
+    </Button>
+  );
+};
+```
+
+## Examples
+
+### With action
+
+<ComponentPreview>
+  <ToastWithActionDemo />
+</ComponentPreview>

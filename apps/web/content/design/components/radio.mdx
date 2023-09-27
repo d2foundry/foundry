@@ -1,0 +1,28 @@
+---
+title: Radio Group
+description: A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.
+---
+
+<ComponentPreview>
+
+    <RadioGroup defaultValue="comfortable">
+      <RadioGroupItem value="default" label="Default" />
+      <RadioGroupItem value="comfortable" label="Comfortable" />
+      <RadioGroupItem value="compact" label="Compact" />
+    </RadioGroup>
+
+</ComponentPreview>
+
+## Usage
+
+```tsx
+import { RadioGroup, RadioGroupItem } from "@foundry-ui/RadioGroup";
+```
+
+```tsx
+<RadioGroup defaultValue="comfortable">
+  <RadioGroupItem value="default" label="Default" />
+  <RadioGroupItem value="comfortable" label="Comfortable" />
+  <RadioGroupItem value="compact" label="Compact" />
+</RadioGroup>
+```

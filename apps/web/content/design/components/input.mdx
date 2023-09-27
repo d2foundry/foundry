@@ -1,0 +1,81 @@
+---
+title: Input
+description: Displays a form input field.
+---
+
+<ComponentPreview>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      gap: "var(--spacing-1)",
+    }}
+  >
+    <Input placeholder="Placeholder..." />
+  </div>
+</ComponentPreview>
+
+## Usage
+
+```tsx
+import { Input } from "@foundry-ui/Input";
+```
+
+```tsx
+<Input placeholder="Placeholder..." />
+```
+
+## Examples
+
+### Default
+
+<ComponentPreview>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      gap: "var(--spacing-1)",
+    }}
+  >
+    <Input placeholder="Placeholder..." />
+  </div>
+</ComponentPreview>
+
+### Disabled
+
+<ComponentPreview>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      gap: "var(--spacing-1)",
+    }}
+  >
+    <Input placeholder="Placeholder..." disabled />
+  </div>
+</ComponentPreview>
+
+### Sizes
+
+<ComponentPreview>
+
+    <Input size="sm" placeholder="Small" />
+    <Input placeholder="Default" />
+    <Input size="lg" placeholder="Large" />
+
+</ComponentPreview>
+
+### With label
+
+<ComponentPreview>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      gap: "var(--spacing-1)",
+    }}
+  >
+    <Label htmlFor="my-input">Display name</Label>
+    <Input id="my-input" placeholder="Placeholder..." />
+  </div>
+</ComponentPreview>

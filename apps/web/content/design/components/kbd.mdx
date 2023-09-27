@@ -1,0 +1,55 @@
+---
+title: Keyboard Input
+description: Display keyboard input that triggers an action.
+---
+
+<ComponentPreview>
+  <div>
+    <KBD meta />
+    <KBD>K</KBD>
+  </div>
+</ComponentPreview>
+
+## Usage
+
+```tsx
+import { KBD } from "@foundry-ui/KBD";
+```
+
+```tsx
+<>
+  <KBD meta />
+  <KBD>K</KBD>
+</>
+```
+
+## Examples
+
+### Modifiers
+
+<ComponentPreview>
+  <div>
+    <KBD meta />
+    <KBD shift />
+    <KBD alt />
+    <KBD ctrl />
+  </div>
+</ComponentPreview>
+
+### Combination
+
+<ComponentPreview>
+  <div>
+    <KBD meta shift>
+      <span>P</span>
+    </KBD>
+  </div>
+</ComponentPreview>
+
+### Small
+
+<ComponentPreview>
+  <div>
+    <KBD size="sm">/</KBD>
+  </div>
+</ComponentPreview>

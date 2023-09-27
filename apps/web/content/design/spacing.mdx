@@ -1,0 +1,22 @@
+---
+title: Spacing
+description: Our spacing system for building complex interfaces.
+---
+
+The scale is built around an 8x8 pixel grid. One spacing unit is equal to `0.5rem`, which translates to `8px` by default in common browsers. The values are proportional, so 16 is twice as much spacing as 8.
+
+## Scale
+
+<SpacingDemo />
+
+## Usage
+
+```scss
+.element {
+  display: flex;
+  align-items: center;
+  height: var(--spacing-5);
+  margin-block: var(--spacing-2);
+  padding-inline: var(--spacing-1-half);
+}
+```

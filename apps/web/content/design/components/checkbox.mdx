@@ -1,0 +1,37 @@
+---
+title: Checkbox
+description: A control that allows the user to toggle between checked and not checked.
+---
+
+<ComponentPreview>
+  <div
+    style={{ display: "flex", alignItems: "center", gap: "var(--spacing-1)" }}
+  >
+    <Checkbox id="option-1" defaultChecked />
+    <Label htmlFor="option-1">Option 1</Label>
+
+  </div>
+</ComponentPreview>
+
+## Usage
+
+```tsx
+import { Checkbox } from "@foundry-ui/Checkbox";
+```
+
+```tsx
+<Checkbox />
+```
+
+## Examples
+
+### Disabled
+
+<ComponentPreview>
+  <div
+    style={{ display: "flex", alignItems: "center", gap: "var(--spacing-1)" }}
+  >
+    <Checkbox id="disabled-1" disabled />
+    <Label htmlFor="disabled-1">Option 1</Label>
+  </div>
+</ComponentPreview>

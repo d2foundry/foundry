@@ -12,6 +12,7 @@
     "@foundry/ui": "workspace:*",
     "@radix-ui/react-icons": "^1.1.1",
     "@react-spring/web": "^9.6.1",
+    "@types/mdx": "^2.0.7",
     "bungie-api-ts": "^5.0.0",
     "contentlayer": "^0.3.4",
     "date-fns": "^2.30.0",
@@ -19,7 +20,8 @@
     "next-contentlayer": "^0.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "server-only": "^0.0.1"
+    "server-only": "^0.0.1",
+    "@foundry/search": "github:d2foundry/search.git"
   },
   "devDependencies": {
     "@foundry/eslint-config-custom": "workspace:*",

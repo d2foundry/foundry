@@ -1,0 +1,161 @@
+---
+title: Colors
+description: Our scalable color system for designing dynamic and accessible interfaces.
+---
+
+## Scale
+
+Our 12-scale color system is adopted from the excellent [Radix Colors](https://www.radix-ui.com/colors).
+
+<PaletteGrid>
+  <ColorPalette
+    label="Gray"
+    colors={Array(12)
+      .fill("")
+      .map((_, i) => ({
+        label: `--gray${i + 1}`,
+        token: `var(--gray${i + 1})`,
+      }))}
+  />
+  <ColorPalette
+    label="Red"
+    colors={Array(12)
+      .fill("")
+      .map((_, i) => ({
+        label: `--red-${i + 1}`,
+        token: `var(--red-${i + 1})`,
+      }))}
+  />
+  <ColorPalette
+    label="Yellow"
+    colors={Array(12)
+      .fill("")
+      .map((_, i) => ({
+        label: `--yellow-${i + 1}`,
+        token: `var(--yellow-${i + 1})`,
+      }))}
+  />
+  <ColorPalette
+    label="Green"
+    colors={Array(12)
+      .fill("")
+      .map((_, i) => ({
+        label: `--green-${i + 1}`,
+        token: `var(--green-${i + 1})`,
+      }))}
+  />
+  <ColorPalette
+    label="Blue"
+    colors={Array(12)
+      .fill("")
+      .map((_, i) => ({
+        label: `--blue${i + 1}`,
+        token: `var(--blue${i + 1})`,
+      }))}
+  />
+  <ColorPalette
+    label="Purple"
+    colors={Array(12)
+      .fill("")
+      .map((_, i) => ({
+        label: `--purple${i + 1}`,
+        token: `var(--purple${i + 1})`,
+      }))}
+  />
+  <ColorPalette
+    label="Black Alpha"
+    alpha
+    colors={Array(12)
+      .fill("")
+      .map((_, i) => ({
+        label: `--blackA${i + 1}`,
+        token: `var(--blackA${i + 1})`,
+      }))}
+  />
+  <ColorPalette
+    label="White Alpha"
+    alpha
+    light
+    colors={Array(12)
+      .fill("")
+      .map((_, i) => ({
+        label: `--whiteA${i + 1}`,
+        token: `var(--whiteA${i + 1})`,
+      }))}
+  />
+</PaletteGrid>
+
+## Aliases
+
+### Primary
+
+<ColorCardList
+  colors={[
+    "appBg",
+    "grayBase",
+    "grayBgSubtle",
+    "grayBg",
+    "grayBgHover",
+    "grayBgActive",
+    "grayLine",
+    "grayBorder",
+    "grayBorderHover",
+    "grayFocusRing",
+    "graySolid",
+    "graySolidHover",
+    "grayText",
+    "grayTextContrast",
+  ].map((label, i) => ({
+    label: `--${label}`,
+    token: `var(--${label})`,
+  }))}
+/>
+### Accent
+
+<ColorCardList
+  colors={[
+    "accentBase",
+    "accentBgSubtle",
+    "accentBg",
+    "accentBgHover",
+    "accentBgActive",
+    "accentLine",
+    "accentBorder",
+    "accentBorderHover",
+    "accentFocusRing",
+    "accentSolid",
+    "accentSolidHover",
+    "accentText",
+    "accentTextContrast",
+  ].map((label, i) => ({
+    label: `--${label}`,
+    token: `var(--${label})`,
+  }))}
+/>
+
+### Destiny
+
+<ColorCardList
+  colors={["common", "uncommon", "rare", "legendary", "exotic", "gold"].map(
+    (label, i) => ({
+      label: `--${label}`,
+      token: `var(--${label})`,
+    })
+  )}
+/>
+
+## Usage
+
+```scss
+.element {
+  background: var(--grayBg);
+  color: var(--grayText);
+  transition: 150ms ease;
+  transition-property: background, color;
+
+  &:hover {
+    background: var(--grayBgHover);
+    color: var(--grayTextContrast);
+  }
+}
+```

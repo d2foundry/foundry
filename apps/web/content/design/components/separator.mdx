@@ -1,0 +1,51 @@
+---
+title: Separator
+description: Visually or semantically separates content.
+---
+
+<ComponentPreview>
+  <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        lineHeight: 1,
+        gap: "var(--spacing-0-half)",
+      }}
+    >
+      <h4 style={{ margin: 0, color: "var(--grayTextContrast)" }}>
+        <>Foundry Combat Systems</>
+      </h4>
+      <p style={{ margin: 0, color: "var(--grayText)" }}>
+        <>Advanced Arms and Armament Explorer.</>
+      </p>
+    </div>
+    <Separator style={{ marginBlock: "var(--spacing-1-half)" }} />
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "var(--spacing-2)",
+        fontSize: "var(--font-size-regular)",
+        color: "var(--grayTextContrast)",
+        height: "var(--spacing-2)",
+      }}
+    >
+      <div>Weapons</div>
+      <Separator orientation="vertical" />
+      <div>Builds</div>
+      <Separator orientation="vertical" />
+      <div>Guides</div>
+    </div>
+  </div>
+</ComponentPreview>
+
+## Usage
+
+```tsx
+import { Separator } from "@foundry-ui/Separator";
+```
+
+```tsx
+<Separator />
+```

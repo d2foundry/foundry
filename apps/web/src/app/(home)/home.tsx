@@ -12,7 +12,7 @@ import React from "react";
 import { cn } from "@foundry/ui/utils";
 
 import styles from "./Home.module.scss";
-import { BlogSection } from "./blog-section";
+import { BlogSection, ChangelogSection } from "./blog-section";
 
 // import { cn } from "@utils/ui";
 
@@ -34,7 +34,7 @@ const CURRENT_SEASON_NUMBER = 22;
 // }
 // const showNightlyAtom = atom(false);
 
-export async function Home() {
+export function Home() {
   // const { weeklyItems, dailyItems } = await getTrendingWeapons();
   return (
     <div className={styles.container}>
@@ -46,9 +46,7 @@ export async function Home() {
       <div className={cn(styles.section, styles.padding, styles.maxWidth)}>
         <div className={styles.blogContainer}>
           <BlogSection />
-          {/* <BlogSection /> */}
-          {/* <Changelog />
-          <LinkSection /> */}
+          <ChangelogSection />
         </div>
       </div>
     </div>

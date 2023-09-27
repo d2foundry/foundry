@@ -1,0 +1,133 @@
+---
+title: Slider
+description: An input where the user selects a value from within a given range.
+---
+
+<ComponentPreview>
+  <div
+    style={{ display: "flex", alignItems: "center", gap: "var(--spacing-2)" }}
+  >
+    <Slider defaultValue={[50]} max={100} step={1} id="def-slider" />
+  </div>
+</ComponentPreview>
+
+## Usage
+
+```tsx
+import { Slider } from "@foundry-ui/Slider";
+```
+
+```tsx
+<Slider defaultValue={[50]} max={100} step={1} />
+```
+
+## Examples
+
+### Vertical
+
+<ComponentPreview>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      gap: "var(--spacing-2)",
+    }}
+  >
+    <Slider
+      max={5}
+      min={0}
+      defaultValue={[2]}
+      orientation="vertical"
+      id="vert-slider-1"
+    />
+    <Label htmlFor="vert-slider-1">A</Label>
+  </div>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      gap: "var(--spacing-2)",
+    }}
+  >
+    <Slider
+      max={5}
+      min={0}
+      defaultValue={[4]}
+      orientation="vertical"
+      id="vert-slider-2"
+    />
+    <Label htmlFor="vert-slider-2">B</Label>
+  </div>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      gap: "var(--spacing-2)",
+    }}
+  >
+    <Slider
+      max={5}
+      min={0}
+      defaultValue={[0]}
+      orientation="vertical"
+      id="vert-slider-3"
+    />
+    <Label htmlFor="vert-slider-3">C</Label>
+  </div>
+</ComponentPreview>
+
+### Alternate thumb
+
+<ComponentPreview>
+  <div
+    style={{ display: "flex", alignItems: "center", gap: "var(--spacing-2)" }}
+  >
+    <Slider
+      max={5}
+      min={0}
+      defaultValue={[1]}
+      variant="pill"
+      id="stack-slider"
+    />
+    <Label htmlFor="stack-slider">Stacks</Label>
+  </div>
+</ComponentPreview>
+
+### With tickmarks
+
+<ComponentPreview>
+  <div
+    style={{ display: "flex", alignItems: "center", gap: "var(--spacing-2)" }}
+  >
+    <Slider
+      max={5}
+      min={0}
+      tickMarks={true}
+      defaultValue={[2]}
+      variant="pill"
+      id="tick-slider"
+    />
+    <Label htmlFor="tick-slider">Stacks</Label>
+  </div>
+</ComponentPreview>
+
+### With range
+
+<ComponentPreview>
+  <div
+    style={{ display: "flex", alignItems: "center", gap: "var(--spacing-2)" }}
+  >
+    <Slider
+      max={10}
+      min={0}
+      defaultValue={[3, 8]}
+      tickMarks={true}
+      id="range-slider"
+      variant="pill"
+    />
+    <Label htmlFor="range-slider">Discipline Tier</Label>
+  </div>
+</ComponentPreview>

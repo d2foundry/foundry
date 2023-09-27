@@ -1,0 +1,78 @@
+---
+title: Toolbar
+description: A container for grouping a set of controls, such as buttons, toggle groups or dropdown menus.
+---
+
+<ComponentPreview>
+  <Toolbar>
+    <ToolbarToggleGroup orientation="horizontal" type="single" defaultValue="1">
+      <ToolbarToggleItem value="1">
+        <RadixIcons.FontBoldIcon />
+      </ToolbarToggleItem>
+      <ToolbarToggleItem value="2">
+        <RadixIcons.FontItalicIcon />
+      </ToolbarToggleItem>
+      <ToolbarToggleItem value="3">
+        <RadixIcons.UnderlineIcon />
+      </ToolbarToggleItem>
+    </ToolbarToggleGroup>
+    <ToolbarSeparator />
+    <ToolbarToggleGroup orientation="horizontal" type="single" defaultValue="1">
+      <ToolbarToggleItem value="1">
+        <RadixIcons.TextAlignLeftIcon />
+      </ToolbarToggleItem>
+      <ToolbarToggleItem value="2">
+        <RadixIcons.TextAlignCenterIcon />
+      </ToolbarToggleItem>
+      <ToolbarToggleItem value="3">
+        <RadixIcons.TextAlignRightIcon />
+      </ToolbarToggleItem>
+    </ToolbarToggleGroup>
+    <ToolbarSeparator />
+    <ToolbarButton>Save</ToolbarButton>
+    <ToolbarButton>Publish</ToolbarButton>
+  </Toolbar>
+</ComponentPreview>
+
+## Usage
+
+```tsx
+import {
+  Toolbar,
+  ToolbarButton,
+  ToolbarSeparator,
+  ToolbarToggleGroup,
+  ToolbarToggleItem,
+} from "@foundry-ui/Toolbar";
+```
+
+```tsx
+<Toolbar>
+  <ToolbarToggleGroup orientation="horizontal" type="single" defaultValue="1">
+    <ToolbarToggleItem value="1">
+      <RadixIcons.FontBoldIcon />
+    </ToolbarToggleItem>
+    <ToolbarToggleItem value="2">
+      <RadixIcons.FontItalicIcon />
+    </ToolbarToggleItem>
+    <ToolbarToggleItem value="3">
+      <RadixIcons.UnderlineIcon />
+    </ToolbarToggleItem>
+  </ToolbarToggleGroup>
+  <ToolbarSeparator />
+  <ToolbarToggleGroup orientation="horizontal" type="single" defaultValue="1">
+    <ToolbarToggleItem value="1">
+      <RadixIcons.TextAlignLeftIcon />
+    </ToolbarToggleItem>
+    <ToolbarToggleItem value="2">
+      <RadixIcons.TextAlignCenterIcon />
+    </ToolbarToggleItem>
+    <ToolbarToggleItem value="3">
+      <RadixIcons.TextAlignRightIcon />
+    </ToolbarToggleItem>
+  </ToolbarToggleGroup>
+  <ToolbarSeparator />
+  <ToolbarButton>Save</ToolbarButton>
+  <ToolbarButton>Publish</ToolbarButton>
+</Toolbar>
+```

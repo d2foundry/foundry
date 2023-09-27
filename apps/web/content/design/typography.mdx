@@ -1,0 +1,73 @@
+---
+title: Typography
+description: Our styles for type.
+---
+
+## Primary Typeface
+
+We use **Neue Haas Grotesk Text** everywhere across Foundry's UI.
+
+<ComponentPreview>
+  <div>
+    <div
+      style={{
+        fontSize: "6rem",
+        textTransform: "uppercase",
+        wordWrap: "anywhere",
+        lineHeight: "1",
+        color: "var(--grayTextContrast)",
+        marginBottom: "var(--spacing-2)",
+        letterSpacing: "-0.025em",
+      }}
+    >
+      {`abcdefghijklmnopqrstuvwxyz`}
+    </div>
+
+    <div
+      style={{
+        fontSize: "6rem",
+        wordWrap: "anywhere",
+        lineHeight: "1",
+        color: "var(--grayTextContrast)",
+        marginBottom: "var(--spacing-4)",
+        letterSpacing: "-0.025em",
+      }}
+    >
+      {`abcdefghijklmnopqrstuvwxyz`}
+    </div>
+
+    <div
+      style={{
+        fontSize: "6rem",
+        wordWrap: "anywhere",
+        lineHeight: "1",
+        color: "var(--grayTextContrast)",
+        marginBottom: "var(--spacing-4)",
+        letterSpacing: "-0.025em",
+      }}
+    >
+      {`123456789.`}
+    </div>
+
+    <div
+      style={{
+        fontSize: "3rem",
+        whiteSpace: "pre-line",
+        wordWrap: "anywhere",
+        lineHeight: "1",
+        color: "var(--grayTextContrast)",
+        fontVariantNumeric: "diagonal-fractions tabular-nums",
+      }}
+    >
+      {`⌘⌥⇧⌃⌅⌫↩⎋
+     !?@#%{}()45° 2/5`}
+    </div>
+
+  </div>
+</ComponentPreview>
+
+## Scale
+
+<ComponentPreview>
+  <TypographyScale />
+</ComponentPreview>

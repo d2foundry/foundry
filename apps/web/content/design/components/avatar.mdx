@@ -1,0 +1,37 @@
+---
+title: Avatar
+description: An image element with a fallback for representing the user.
+---
+
+<ComponentPreview>
+  <Avatar>
+    <AvatarImage
+      src="https://www.bungie.net/img/profile/avatars/cc43.jpg"
+      alt=""
+    />
+    <AvatarFallback>GF</AvatarFallback>
+  </Avatar>
+</ComponentPreview>
+
+## Usage
+
+```tsx
+import { Avatar, AvatarImage, AvatarFallback } from "@foundry-ui/Avatar";
+```
+
+```tsx
+<Avatar>
+  <AvatarImage src="https://www.bungie.net/img/profile/avatars/cc43.jpg" />
+  <AvatarFallback>GF</AvatarFallback>
+</Avatar>
+```
+
+## Examples
+
+### Fallback
+
+<ComponentPreview>
+  <Avatar>
+    <AvatarFallback>GF</AvatarFallback>
+  </Avatar>
+</ComponentPreview>

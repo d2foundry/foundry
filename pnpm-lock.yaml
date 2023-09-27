@@ -56,6 +56,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@foundry/search':
+        specifier: github:d2foundry/search.git
+        version: github.com/d2foundry/search/8d97ec4b9d54ef21fb256566a43cc988af5e2999
       '@foundry/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -65,6 +68,9 @@ importers:
       '@react-spring/web':
         specifier: ^9.6.1
         version: 9.6.1(react-dom@18.2.0)(react@18.2.0)
+      '@types/mdx':
+        specifier: ^2.0.7
+        version: 2.0.7
       bungie-api-ts:
         specifier: ^5.0.0
         version: 5.0.0
@@ -4654,6 +4660,11 @@ packages:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
     dev: true
 
+  /fuse.js@6.6.2:
+    resolution: {integrity: sha512-cJaJkxCCxC8qIIcPBF9yGxY0W/tVZS3uEISDxhYIdtk8OL93pe+6Zj7LjCqVV4dzbqcriOZ+kQ/NE4RXZHsIGA==}
+    engines: {node: '>=10'}
+    dev: false
+
   /gensync@1.0.0-beta.2:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
     engines: {node: '>=6.9.0'}
@@ -5693,6 +5704,11 @@ packages:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
     dev: true
+
+  /lz-string@1.5.0:
+    resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
+    hasBin: true
+    dev: false
 
   /make-error@1.3.6:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
@@ -8145,6 +8161,15 @@ packages:
 
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
+    dev: false
+
+  github.com/d2foundry/search/8d97ec4b9d54ef21fb256566a43cc988af5e2999:
+    resolution: {tarball: https://codeload.github.com/d2foundry/search/tar.gz/8d97ec4b9d54ef21fb256566a43cc988af5e2999}
+    name: '@d2foundry/search'
+    version: 1.4.0
+    dependencies:
+      fuse.js: 6.6.2
+      lz-string: 1.5.0
     dev: false
 
 settings:
