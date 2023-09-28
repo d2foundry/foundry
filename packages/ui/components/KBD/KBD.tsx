@@ -1,5 +1,5 @@
-import React, { HTMLAttributes } from "react";
-import { cn } from "@utils/ui";
+import { HTMLAttributes } from "react";
+import { cn } from "../../utils/cn";
 import styles from "./KBD.module.scss";
 
 interface KBDProps extends HTMLAttributes<HTMLDivElement> {

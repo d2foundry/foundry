@@ -1,9 +1,11 @@
-import React, { forwardRef, useId } from "react";
+"use client";
+
+import { forwardRef, useId } from "react";
 
 import * as SliderPrimitive from "@radix-ui/react-slider";
 
 import styles from "./Slider.module.scss";
-import { cn } from "@utils/ui";
+import { cn } from "../../utils/cn";
 
 const MAX_TICKS = 20;
 

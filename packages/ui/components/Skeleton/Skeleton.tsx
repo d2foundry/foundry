@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Skeleton.module.scss";
-import { cn } from "@utils/ui";
+import { cn } from "../../utils/cn";
 import { VariantProps, cva } from "class-variance-authority";
 export const skeletonVariants = cva(styles.skeleton, {
   variants: {

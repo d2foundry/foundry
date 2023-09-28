@@ -3,7 +3,7 @@ import React from "react";
 
 import * as SeparatorPrimitive from "@radix-ui/react-separator";
 
-import { cn } from "@utils/ui";
+import { cn } from "../../utils/cn";
 import styles from "./Separator.module.scss";
 
 const Separator = React.forwardRef<

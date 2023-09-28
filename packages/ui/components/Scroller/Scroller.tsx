@@ -1,9 +1,11 @@
+"use client";
+
 import React from "react";
 
 import * as ScrollArea from "@radix-ui/react-scroll-area";
 
 import styles from "./Scroller.module.scss";
-import { cn } from "@utils/ui";
+import { cn } from "../../utils/cn";
 
 // interface ScrollerProps {}
 

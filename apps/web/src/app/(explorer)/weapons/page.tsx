@@ -1,7 +1,7 @@
 // import { allDestinyInventoryItems } from "contentlayer/generated";
 
 // import { getDestinyInventoryItems } from "../../api/getInventoryItems";
-import { Flex } from "@/components/Flex";
+import { Flex } from "@foundry/ui/components";
 import {
   getDestinyInventoryItems,
   getDestinyWeapons,

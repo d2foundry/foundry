@@ -1,6 +1,44 @@
 @import "./colors.scss";
 
+// spacing
 :root {
+  --spacing-0_25: 0.125rem;
+  --spacing-0-quarter: 0.125rem;
+  --spacing-0_5: 0.25rem;
+  --spacing-0-half: 0.25rem;
+  --spacing-1: 0.5rem;
+  --spacing-1_5: 0.75rem;
+  --spacing-1-half: 0.75rem;
+  --spacing-2: 1rem;
+  --spacing-3: 1.5rem;
+  --spacing-4: 2rem;
+  --spacing-5: 2.5rem;
+  --spacing-6: 3rem;
+  --spacing-7: 3.5rem;
+  --spacing-8: 4rem;
+  --spacing-9: 4.5rem;
+  --spacing-10: 5rem;
+  --spacing-20: 10rem;
+  --spacing-30: 15rem;
+  --spacing-40: 20rem;
+}
+
+// semantic colors
+:root {
+  --gray-base: var(--gray-1);
+  --gray-bg-subtle: var(--gray-2);
+  --gray-bg: var(--gray-3);
+  --gray-bg-hover: var(--gray-4);
+  --gray-bg-active: var(--gray-5);
+  --gray-line: var(--gray-6);
+  --gray-border: var(--gray-7);
+  --gray-border-hover: var(--gray-8);
+  --gray-focus-ring: var(--gray-8);
+  --gray-solid: var(--gray-9);
+  --gray-solid-hover: var(--gray-10);
+  --gray-text: var(--gray-11);
+  --gray-text-contrast: var(--gray-12);
+
   --accent-base: var(--blue-1);
   --accent-bg-subtle: var(--blue-2);
   --accent-bg: var(--blue-3);

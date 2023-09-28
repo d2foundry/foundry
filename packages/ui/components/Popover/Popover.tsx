@@ -1,11 +1,12 @@
+"use client";
 import React, { forwardRef } from "react";
 import * as PopoverPrimitive from "@radix-ui/react-popover";
+import { Cross2Icon } from "@radix-ui/react-icons";
+
+import { IconButton } from "../IconButton";
+import { cn } from "../../utils/cn";
 
 import styles from "./Popover.module.scss";
-import { Cross2Icon } from "@radix-ui/react-icons";
-import { IconButton } from "@foundry-ui/IconButton";
-
-import { cn } from "@utils/ui";
 
 export const Popover = PopoverPrimitive.Root;
 export const PopoverTrigger = PopoverPrimitive.Trigger;

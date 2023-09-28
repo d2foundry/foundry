@@ -1,5 +1,5 @@
-import { InfoCircledIcon } from "@radix-ui/react-icons";
 import React from "react";
+import { InfoCircledIcon } from "@radix-ui/react-icons";
 import styles from "./Message.module.scss";
 interface MessageProps {
   title: string | React.ReactNode;

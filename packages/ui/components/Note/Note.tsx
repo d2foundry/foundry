@@ -3,11 +3,11 @@ import {
   ExclamationTriangleIcon,
   InfoCircledIcon,
 } from "@radix-ui/react-icons";
-import { cn } from "@utils/ui";
+import { cn } from "../../utils/cn";
 import React, { HTMLAttributes } from "react";
 import { VariantProps, cva } from "class-variance-authority";
 import styles from "./Note.module.scss";
-import { IconButton } from "@foundry-ui/IconButton";
+import { IconButton } from "../IconButton";
 
 export const noteVariants = cva(styles.note, {
   variants: {

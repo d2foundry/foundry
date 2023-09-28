@@ -1,8 +1,10 @@
+"use client";
+
 import React from "react";
 
 import * as SwitchPrimitive from "@radix-ui/react-switch";
 
-import { cn } from "@utils/ui";
+import { cn } from "../../utils/cn";
 
 import styles from "./Switch.module.scss";
 

@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from "react";
 
 import { VariantProps, cva } from "class-variance-authority";
 
-import { cn } from "@utils/ui";
+import { cn } from "../../utils/cn";
 
 import styles from "./Button.module.scss";
 

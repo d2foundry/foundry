@@ -11,6 +11,11 @@
     "./utils": {
       "types": "./utils/index.ts",
       "import": "./utils/index.ts"
+    },
+    "./styles.scss": {
+      "import": "./design-system/globals.scss",
+      "require": "./design-system/globals.scss",
+      "default": "./design-system/globals.scss"
     }
   },
   "license": "MIT",
@@ -25,7 +30,7 @@
     "@radix-ui/react-checkbox": "^1.0.3",
     "@radix-ui/react-dialog": "^1.0.2",
     "@radix-ui/react-dropdown-menu": "^2.0.1",
-    "@radix-ui/react-icons": "^1.1.1",
+    "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-label": "^2.0.1",
     "@radix-ui/react-navigation-menu": "^1.1.2",
     "@radix-ui/react-popover": "^1.0.5",
@@ -37,24 +42,32 @@
     "@radix-ui/react-switch": "^1.0.1",
     "@radix-ui/react-tabs": "^1.0.2",
     "@radix-ui/react-toast": "^1.1.3",
+    "@radix-ui/react-toggle": "^1.0.3",
     "@radix-ui/react-toolbar": "^1.0.1",
     "@radix-ui/react-tooltip": "^1.0.2",
     "@radix-ui/react-visually-hidden": "^1.0.1",
     "@react-spring/web": "^9.6.1",
+    "autoprefixer": "^10.4.7",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^1.2.1",
     "cmdk": "^0.2.0",
     "command-score": "^0.1.2",
+    "postcss": "^8.4.14",
+    "postcss-modules": "^4.3.1",
+    "postcss-preset-env": "^7.6.0",
     "react": "^18.2.0",
     "sass": "^1.56.1"
   },
   "devDependencies": {
+    "@foundry/eslint-config-custom": "workspace:*",
+    "@foundry/tsconfig": "workspace:*",
     "@next/eslint-plugin-next": "^13.4.19",
     "@turbo/gen": "^1.10.12",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
-    "@foundry/eslint-config-custom": "workspace:*",
-    "@foundry/tsconfig": "workspace:*",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^13.3.2",
     "typescript": "^4.5.3"
   }
 }

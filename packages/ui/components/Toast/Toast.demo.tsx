@@ -1,5 +1,6 @@
+"use client";
 import { useToast } from "./useToast";
-import { Button } from "@foundry-ui/Button";
+import { Button } from "../Button";
 import { ToastAction } from "./Toast";
 
 export const ToastDemo = () => {

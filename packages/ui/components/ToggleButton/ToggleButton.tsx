@@ -1,11 +1,12 @@
+"use client";
+
 import React from "react";
+import * as Toggle from "@radix-ui/react-toggle";
+import { IconButton } from "../IconButton";
+import type { IconButtonProps } from "../IconButton";
+import { cn } from "../../utils/cn";
 
 import styles from "./ToggleButton.module.scss";
-import * as Toggle from "@radix-ui/react-toggle";
-import { IconButton } from "@foundry-ui/IconButton";
-import { IconButtonProps } from "@foundry-ui/IconButton/IconButton";
-
-import { cn } from "@utils/ui";
 
 interface ToggleButtonProps extends IconButtonProps {
   pressed?: boolean;

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import * as DialogPrimitive from "@radix-ui/react-dialog";
@@ -5,8 +7,8 @@ import * as DialogPrimitive from "@radix-ui/react-dialog";
 import styles from "./Dialog.module.scss";
 // import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { Cross1Icon } from "@radix-ui/react-icons";
-import { cn } from "@utils/ui";
-import { IconButton } from "@foundry-ui/IconButton";
+import { cn } from "../../utils/cn";
+import { IconButton } from "../IconButton";
 
 // interface DialogProps {
 //   trigger: React.ReactNode;

@@ -1,9 +1,11 @@
-import React, { forwardRef } from "react";
+"use client";
+
+import { forwardRef } from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
 
-import { IconButton } from "@foundry-ui/IconButton";
-import { cn } from "@utils/ui";
+import { IconButton } from "../IconButton";
+import { cn } from "../../utils/cn";
 
 import styles from "./Drawer.module.scss";
 

@@ -1,4 +1,5 @@
 import "./globals.css";
+import "@foundry/ui/styles.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { SiteLayout } from "./site-layout";

@@ -1,6 +1,4 @@
-import { between } from "drizzle-orm";
-
-const displayValues = ["none", "inline-flex", "flex"] as const;
+// const displayValues = ["none", "inline-flex", "flex"] as const;
 const directionValues = [
   "row",
   "column",
@@ -19,6 +17,7 @@ export function Flex({
   justify = "start",
   align,
   gap = "0",
+  ...rest
 }: {
   children: React.ReactNode;
   wrap?: (typeof wrapValues)[number];
@@ -26,10 +25,12 @@ export function Flex({
   justify?: (typeof justifyValues)[number];
   align?: (typeof alignValues)[number];
   gap?: (typeof gapValues)[number];
-}) {
+} & React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div
+      {...rest}
       style={{
+        ...(rest.style || {}),
         display: "flex",
         flexWrap: wrap,
         flexDirection: direction,

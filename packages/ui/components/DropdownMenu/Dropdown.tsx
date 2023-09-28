@@ -1,8 +1,9 @@
+"use client";
 import React from "react";
 import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
 import { CheckIcon, DividerHorizontalIcon } from "@radix-ui/react-icons";
 
-import { cn } from "@utils/ui";
+import { cn } from "../../utils/cn";
 
 import styles from "./Dropdown.module.scss";
 

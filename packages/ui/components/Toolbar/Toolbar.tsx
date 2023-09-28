@@ -1,10 +1,12 @@
+"use client";
+
 import React from "react";
 
 import * as ToolbarPrimitive from "@radix-ui/react-toolbar";
 
+import { cn } from "../../utils/cn";
+import { buttonVariants } from "../Button";
 import styles from "./Toolbar.module.scss";
-import { cn } from "@utils/ui";
-import { buttonVariants } from "@foundry-ui/Button";
 
 const Toolbar = React.forwardRef<
   React.ElementRef<typeof ToolbarPrimitive.Root>,

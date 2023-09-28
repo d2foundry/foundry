@@ -6,10 +6,10 @@ import styles from "./Toast.module.scss";
 import { VariantProps, cva } from "class-variance-authority";
 // import { Button } from "@foundry-ui/Button";
 
-import { cn } from "@utils/ui";
+import { cn } from "../../utils/cn";
 import { Cross1Icon } from "@radix-ui/react-icons";
-import { Button } from "@foundry-ui/Button";
-import { IconButton } from "@foundry-ui/IconButton";
+import { Button } from "../Button";
+import { IconButton } from "../IconButton";
 
 const ToastProvider = ToastPrimitive.Provider;
 

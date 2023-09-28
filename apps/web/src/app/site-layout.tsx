@@ -1,4 +1,4 @@
-import { Flex } from "@/components/Flex";
+import { Flex } from "@foundry/ui/components";
 import { Nav } from "@/components/Nav";
 
 export function SiteLayout({ children }: { children: React.ReactNode }) {

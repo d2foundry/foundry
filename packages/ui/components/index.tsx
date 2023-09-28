@@ -5,6 +5,7 @@ export * from "./Checkbox";
 export * from "./Dialog";
 export * from "./Drawer";
 export * from "./DropdownMenu";
+export * from "./Flex";
 export * from "./IconButton";
 export * from "./Input";
 export * from "./KBD";

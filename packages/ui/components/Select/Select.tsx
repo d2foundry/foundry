@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import * as SelectPrimitive from "@radix-ui/react-select";
 import {
@@ -7,7 +8,7 @@ import {
   ChevronUpIcon,
 } from "@radix-ui/react-icons";
 
-import { cn } from "@utils/ui";
+import { cn } from "../../utils/cn";
 
 import styles from "./Select.module.scss";
 

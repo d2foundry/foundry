@@ -2,8 +2,8 @@ import React, { PropsWithChildren } from "react";
 import { VariantProps, cva } from "class-variance-authority";
 
 import styles from "./IconButton.module.scss";
-import { Tooltip } from "@foundry-ui/Tooltip";
-import { cn } from "@utils/ui";
+import { Tooltip } from "../Tooltip";
+import { cn } from "../../utils/cn";
 
 export interface IconButtonProps
   extends PropsWithChildren<React.ButtonHTMLAttributes<HTMLButtonElement>> {
