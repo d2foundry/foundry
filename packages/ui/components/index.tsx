@@ -25,3 +25,4 @@ export * from "./Toast";
 export * from "./ToggleButton";
 export * from "./Toolbar";
 export * from "./Tooltip";
+export * from "./Theme";

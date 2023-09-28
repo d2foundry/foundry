@@ -13,6 +13,7 @@ import { cn } from "@foundry/ui/utils";
 
 import styles from "./Home.module.scss";
 import { BlogSection, ChangelogSection } from "./blog-section";
+import { Flex } from "@/components/Flex";
 
 // import { cn } from "@utils/ui";
 
@@ -37,18 +38,16 @@ const CURRENT_SEASON_NUMBER = 22;
 export function Home() {
   // const { weeklyItems, dailyItems } = await getTrendingWeapons();
   return (
-    <div className={styles.container}>
+    <Flex direction="column">
       <div></div>
       <div className={styles.banner}>
         {/* <Shine /> */}
         <span>{TAGLINE}</span>
       </div>
-      <div className={cn(styles.section, styles.padding, styles.maxWidth)}>
-        <div className={styles.blogContainer}>
-          <BlogSection />
-          <ChangelogSection />
-        </div>
-      </div>
-    </div>
+      <Flex direction="row">
+        <BlogSection />
+        <ChangelogSection />
+      </Flex>
+    </Flex>
   );
 }

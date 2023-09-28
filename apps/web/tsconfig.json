@@ -4,6 +4,7 @@
     "plugins": [{ "name": "next" }],
     "paths": {
       "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
       "contentlayer/generated": ["./.contentlayer/generated"]
     }
   },

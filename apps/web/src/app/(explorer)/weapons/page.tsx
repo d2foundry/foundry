@@ -1,6 +1,7 @@
 // import { allDestinyInventoryItems } from "contentlayer/generated";
 
 // import { getDestinyInventoryItems } from "../../api/getInventoryItems";
+import { Flex } from "@/components/Flex";
 import {
   getDestinyInventoryItems,
   getDestinyWeapons,
@@ -21,9 +22,11 @@ export default async function Page() {
   return (
     <div>
       <h1>Weapons</h1>
-      {allDestinyInventoryItems?.map((v) => (
-        <div key={v.hash}>{`${v.displayProperties.name}`}</div>
-      ))}
+      <Flex direction="column">
+        {allDestinyInventoryItems?.map((v) => (
+          <div key={v.hash}>{`${v.displayProperties.name}`}</div>
+        ))}
+      </Flex>
     </div>
   );
 }
