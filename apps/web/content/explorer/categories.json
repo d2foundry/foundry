@@ -1,0 +1,56 @@
+{
+  "categories": [
+    { "name": "Weapons", "slug": "weapons", "count": 11, "parent": null },
+    { "name": "Perks", "slug": "perks", "count": 12, "parent": null },
+    {
+      "name": "Exotic Armor",
+      "slug": "exotic-armor",
+      "count": 10,
+      "parent": null
+    },
+    {
+      "name": "Weapon Mods",
+      "slug": "weapon-mods",
+      "count": 10,
+      "parent": null
+    },
+    { "name": "Armor Mods", "slug": "armor-mods", "count": 10, "parent": null },
+    {
+      "name": "Exotic Weapons",
+      "slug": "exotic",
+      "count": 11,
+      "parent": "weapons"
+    },
+    {
+      "name": "Hunter",
+      "slug": "hunter",
+      "count": 11,
+      "parent": "exotic-armor"
+    },
+    { "name": "Titan", "slug": "titan", "count": 11, "parent": "exotic-armor" },
+    {
+      "name": "Warlock",
+      "slug": "warlock",
+      "count": 11,
+      "parent": "exotic-armor"
+    },
+    {
+      "name": "Weapon Perks",
+      "slug": "weapon",
+      "count": 12,
+      "parent": "perks"
+    },
+    {
+      "name": "Intrinsic Traits",
+      "slug": "intrinsic",
+      "count": 12,
+      "parent": "perks"
+    },
+    {
+      "name": "Origin Traits",
+      "slug": "origin",
+      "count": 12,
+      "parent": "perks"
+    }
+  ]
+}

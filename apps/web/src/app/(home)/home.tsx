@@ -9,11 +9,11 @@ import React from "react";
 //   HeartFilledIcon,
 //   InfoCircledIcon,
 // } from "@radix-ui/react-icons";
-import { cn } from "@foundry/ui/utils";
+// import { cn } from "@foundry/ui/utils";
 
 import styles from "./Home.module.scss";
 import { BlogSection, ChangelogSection } from "./blog-section";
-import { Flex } from "@/components/Flex";
+import { Flex } from "@foundry/ui/components";
 
 // import { cn } from "@utils/ui";
 
