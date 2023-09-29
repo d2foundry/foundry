@@ -1,19 +1,20 @@
 import {
+  ComputedFields,
   defineDocumentType,
   defineNestedType,
   makeSource,
 } from "contentlayer/source-files";
-import { spawn } from "node:child_process";
-import fs from "fs/promises";
-import { existsSync, mkdirSync } from "node:fs";
+// import { spawn } from "node:child_process";
+// import fs from "fs/promises";
+// import { existsSync, mkdirSync } from "node:fs";
 // import {f} from "@foundry/search"
 
 // import { makeSource } from "contentlayer/source-remote-files";
-import {
-  MANIFEST_SLICES,
-  fetchManifest,
-  getManifest,
-} from "./src/lib/api/destinyManifest";
+// import {
+//   MANIFEST_SLICES,
+//   fetchManifest,
+//   getManifest,
+// } from "./src/lib/api/destinyManifest";
 
 const Author = defineNestedType(() => ({
   name: "Author",
@@ -81,6 +82,16 @@ export const ChangelogPost = defineDocumentType(() => ({
   },
 }));
 
+const computedFields: ComputedFields = {
+  slug: {
+    type: "string",
+    resolve: (doc) => `/${doc._raw.flattenedPath}`,
+  },
+  slugAsParams: {
+    type: "string",
+    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
+  },
+};
 export const DesignDoc = defineDocumentType(() => ({
   name: "DesignDoc",
   filePathPattern: `design/**/*.mdx`,
@@ -89,12 +100,7 @@ export const DesignDoc = defineDocumentType(() => ({
     title: { type: "string", required: true },
     description: { type: "string", required: true },
   },
-  computedFields: {
-    url: {
-      type: "string",
-      resolve: (post) => post._raw.flattenedPath.replace(/design\/?/, ""),
-    },
-  },
+  computedFields: computedFields,
 }));
 
 export const Doc = defineDocumentType(() => ({
@@ -104,12 +110,7 @@ export const Doc = defineDocumentType(() => ({
     title: { type: "string", required: true },
     description: { type: "string", required: true },
   },
-  computedFields: {
-    url: {
-      type: "string",
-      resolve: (post) => post._raw.flattenedPath.replace(/docs\/?/, ""),
-    },
-  },
+  computedFields: computedFields,
 }));
 
 // const API_SYNC_INTERVAL = 1000 * 60 * 60;

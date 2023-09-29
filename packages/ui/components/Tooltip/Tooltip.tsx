@@ -9,6 +9,7 @@ interface TooltipProps {
   textAlign?: "center" | "left";
 }
 
+export const TooltipProvider = RadixTooltip.TooltipProvider;
 export const Tooltip = React.forwardRef<
   HTMLButtonElement,
   PropsWithChildren<TooltipProps>

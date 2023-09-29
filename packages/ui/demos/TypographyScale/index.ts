@@ -1,0 +1,1 @@
+export { TypographyScale } from "./TypographyScale";

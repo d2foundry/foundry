@@ -8,6 +8,10 @@
       "import": "./components/index.tsx",
       "types": "./components/index.tsx"
     },
+    "./demos": {
+      "types": "./demos/index.tsx",
+      "import": "./demos/index.tsx"
+    },
     "./utils": {
       "types": "./utils/index.ts",
       "import": "./utils/index.ts"

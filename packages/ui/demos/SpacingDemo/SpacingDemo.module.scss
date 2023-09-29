@@ -1,0 +1,51 @@
+.listItem {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  padding: var(--spacing-1-half) var(--spacing-1-half);
+  border-bottom: 1px solid var(--grayLine);
+  color: var(--grayText);
+  gap: var(--spacing-1);
+
+  @media (width >= 768px) {
+    grid-template-columns: 3fr 0.75fr 0.75fr 6fr;
+  }
+}
+
+.header {
+  padding: var(--spacing-1) var(--spacing-1-half);
+  border: 1px solid var(--grayLine);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--grayBgSubtle);
+  color: var(--grayText);
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.list {
+  width: 100%;
+  overflow-x: auto;
+  font-size: var(--font-size-regular);
+}
+
+.tokenName {
+  font-size: var(--font-size-small);
+  &::after,
+  &::before {
+    content: "";
+  }
+}
+
+.spacingBar {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  height: var(--spacing-2);
+  background-color: var(--accentSolid);
+
+  @media (width >= 768px) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}

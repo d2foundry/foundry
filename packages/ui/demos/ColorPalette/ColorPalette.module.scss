@@ -1,0 +1,149 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-0-quarter);
+  margin-bottom: var(--spacing-8);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  gap: var(--spacing-0-quarter);
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  width: 100%;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-8);
+}
+
+.colorCard {
+  display: flex;
+  grid-gap: 16px;
+  align-items: center;
+  margin: -8px;
+  padding: 8px;
+  transition: background 0.15s;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--grayText);
+  font-size: var(--font-size-regular);
+  line-height: 1;
+  text-align: left;
+  cursor: pointer;
+  gap: 16px;
+
+  &:hover {
+    background: var(--grayBgHover);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: var(--spacing-1);
+  }
+}
+
+.tokenName {
+  display: flex;
+  align-items: center;
+  color: var(--grayTextContrast);
+  font-weight: 500;
+  line-height: 1.25rem;
+  gap: var(--spacing-0-half);
+}
+
+.checkIcon {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: opacity 150ms ease;
+
+  // margin-left: var(--spacing-1_5);
+}
+
+.colorCardChip {
+  width: var(--spacing-8);
+  height: var(--spacing-8);
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-inset);
+}
+
+.chip {
+  position: relative;
+  width: 100%;
+  height: 2.75rem;
+
+  // border-radius: var(--border-radius-xs);
+  overflow: hidden;
+  transition: 150ms ease;
+  transition-property: box-shadow;
+
+  // border: 1px solid transparent;
+  cursor: pointer;
+
+  & > :first-child {
+    border-radius: var(--border-radius-xxs);
+  }
+
+  &:hover > :first-child {
+    box-shadow: inset 0 0 0 1px var(--whiteA9);
+  }
+
+  * {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.copyIcon {
+  position: absolute;
+  z-index: 2;
+  top: var(--spacing-0-quarter);
+  right: var(--spacing-0-quarter);
+  width: 1rem;
+  height: 1rem;
+  opacity: 0;
+  color: var(--black);
+}
+
+.chip:hover .copyIcon {
+  opacity: 1;
+}
+
+.alpha {
+  --check-color: hsl(0deg 0% 20.5%);
+
+  background-color: transparent;
+  background-image: linear-gradient(
+      45deg,
+      var(--check-color) 25%,
+      transparent 25%
+    ),
+    linear-gradient(135deg, var(--check-color) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--check-color) 75%),
+    linear-gradient(135deg, transparent 75%, var(--check-color) 75%);
+  background-position: 0 0, 6px 0, 6px -6px, 0 6px;
+  background-size: 12px 12px;
+}
+
+// :global(.light) .light {
+
+// }
+
+.palette {
+  display: grid;
+  grid-template-columns: 10ch auto;
+  align-items: center;
+  color: var(--grayText);
+  font-size: var(--font-size-body-sm);
+}

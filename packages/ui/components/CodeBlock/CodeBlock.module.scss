@@ -1,0 +1,35 @@
+.copyButtonWrapper {
+  position: absolute;
+  top: var(--spacing-1-half);
+  right: var(--spacing-1-half);
+}
+
+.copyButton {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  opacity: 0;
+}
+
+.pre {
+  padding: var(--spacing-1-half) 0;
+
+  &:hover .copyButton {
+    opacity: 1;
+  }
+}
+
+.pre > code {
+  display: grid;
+  min-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.pre :global(.line) {
+  padding: var(--spacing-0-quarter) var(--spacing-2);
+  display: inline-block;
+  width: 100%;
+}
+
+.pre :global(.highlighted) {
+  background: var(--whiteA3);
+}

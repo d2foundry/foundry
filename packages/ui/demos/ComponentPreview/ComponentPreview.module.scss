@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-3) var(--spacing-3);
+  border: 1px solid var(--grayLine);
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  & > * {
+    box-sizing: border-box;
+  }
+  // background: var(--appBg);
+}
+
+.gradient {
+  border-color: var(--whiteA6);
+  // background-color: var(--black);
+  background-image: radial-gradient(
+      circle at 0% 150%,
+      var(--purpleA9),
+      transparent
+    ),
+    radial-gradient(circle at 100% 150%, var(--blueA9), transparent);
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+}

@@ -3,6 +3,7 @@ import "@foundry/ui/styles.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { SiteLayout } from "./site-layout";
+import { Client } from "./client";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <SiteLayout>{children}</SiteLayout>
+        <Client>
+          <SiteLayout>{children}</SiteLayout>
+        </Client>
       </body>
     </html>
   );
