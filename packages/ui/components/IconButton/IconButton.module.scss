@@ -12,48 +12,48 @@
   border-radius: var(--border-radius-xs);
   outline: none;
   background-color: transparent;
-  color: var(--gray11);
+  color: var(--color-gray-text);
   cursor: pointer;
   appearance: none;
 
   &:focus {
-    box-shadow: 0 0 0 2px var(--blue-8);
+    box-shadow: 0 0 0 2px var(--color-accent-focus-ring);
   }
 
   &:hover {
-    background-color: var(--grayBgHover);
-    color: var(--gray12);
+    background-color: var(--color-gray-bg-hover);
+    color: var(--color-gray-text-contrast);
   }
 
   &:active {
-    background-color: var(--grayBgActive);
+    background-color: var(--color-gray-bg-active);
   }
 
   &:focus-visible {
-    box-shadow: 0 0 0 2px var(--accentFocusRing);
+    box-shadow: 0 0 0 2px var(--color-accent-focus-ring);
   }
 }
 
 .button[disabled] {
   transition: 0.5s ease-out;
   opacity: 1;
-  background-color: var(--gray-8);
-  color: var(--black);
+  background-color: var(--color-background-button-icon-disabled);
+  color: var(--color-text-button-icon-disabled);
   cursor: default;
 }
 
 .warning {
   background-color: transparent;
-  color: var(--warningText);
+  color: var(--color-warning-text);
 
   &:hover {
-    background-color: var(--warningBgHover);
-    color: var(--warningTextContrast);
+    background-color: var(--color-warning-bg-hover);
+    color: var(--warning-text-contrast);
   }
 
   &:active {
-    background-color: var(--warningBgActive);
-    color: var(--warningTextContrast);
+    background-color: var(--color-warning-bg-active);
+    color: var(--color-warning-text-contrast);
   }
 
   &[disabled],
@@ -61,27 +61,27 @@
     transition: 0.5s ease-out;
     opacity: 0.5;
     background-color: transparent;
-    color: var(--warningText);
+    color: var(--color-warning-text);
     cursor: not-allowed;
   }
 
   &:focus-visible {
-    box-shadow: 0 0 0 2px var(--warningFocusRing);
+    box-shadow: 0 0 0 2px var(--color-warning-focus-ring);
   }
 }
 
 .destructive {
   background-color: transparent;
-  color: var(--dangerText);
+  color: var(--color-danger-text);
 
   &:hover {
-    background-color: var(-dangerBgHover);
-    color: var(--dangerTextContrast);
+    background-color: var(--color-danger-bg-hover);
+    color: var(--color-danger-text-contrast);
   }
 
   &:active {
-    background-color: var(--dangerBgActive);
-    color: var(--dangerTextContrast);
+    background-color: var(--color-danger-bg-active);
+    color: var(--color-danger-text-contrast);
   }
 
   &[disabled],
@@ -89,7 +89,7 @@
     transition: 0.5s ease-out;
     opacity: 0.5;
     background-color: transparent;
-    color: var(--dangerText);
+    color: var(--color-danger-text);
     cursor: not-allowed;
   }
 }

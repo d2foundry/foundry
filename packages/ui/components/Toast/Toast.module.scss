@@ -22,13 +22,16 @@
   grid-template-areas: "title action" "description action";
   grid-template-columns: auto max-content;
   align-items: center;
-  padding: var(--spacing-1_5);
+  padding: var(--spacing-1-half);
   column-gap: 15px;
-  border: 1px solid var(--grayBorder);
+  border: 1px solid var(--color-gray-border);
   border-radius: var(--border-radius-xs);
-  background-color: var(--grayBg);
-  box-shadow: 0 1px 1px rgb(0 0 0 / 8%), 0 2px 2px rgb(0 0 0 / 12%),
-    0 4px 4px rgb(0 0 0 / 16%), 0 8px 8px rgb(0 0 0 / 20%);
+  background-color: var(--color-gray-bg);
+  box-shadow:
+    0 1px 1px rgb(0 0 0 / 8%),
+    0 2px 2px rgb(0 0 0 / 12%),
+    0 4px 4px rgb(0 0 0 / 16%),
+    0 8px 8px rgb(0 0 0 / 20%);
 }
 
 .toast[data-state="open"] {
@@ -54,7 +57,7 @@
 
 .toastTitle {
   grid-area: title;
-  color: var(--grayTextContrast);
+  color: var(--color-gray-text-contrast);
   font-size: var(--font-size-large);
 
   // margin-bottom: 5px;
@@ -64,7 +67,7 @@
 .toastDescription {
   grid-area: description;
   margin: 0;
-  color: var(--grayText);
+  color: var(--color-gray-text);
   font-size: var(--font-size-sm);
   line-height: 1.3;
 }

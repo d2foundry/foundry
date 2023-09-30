@@ -49,14 +49,14 @@
 .tooltipContent {
   z-index: 999;
   max-width: 280px;
-  padding: var(--spacing-1) var(--spacing-1_5);
+  padding: var(--spacing-1) var(--spacing-1-half);
   animation-duration: 400ms;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-  border: 1px solid var(--grayBorder);
+  border: 1px solid var(--color-gray-border);
   border-radius: 4px;
-  background-color: var(--elevatedBgSubtle);
+  background-color: var(--color-elevated-bg-subtle);
   box-shadow: var(--shadow);
-  color: var(--grayTextContrast);
+  color: var(--color-gray-text-contrast);
   font-size: 0.75rem;
   line-height: 1;
   line-height: 1rem;
@@ -92,8 +92,8 @@
 }
 
 .tooltipArrow {
-  stroke: var(--grayBorder);
-  fill: var(--elevatedBgSubtle);
+  stroke: var(--color-gray-border);
+  fill: var(--color-elevated-bg-subtle);
 
   // stroke-width: 1px;
 }

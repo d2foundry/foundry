@@ -9,7 +9,7 @@
   position: relative;
   flex: 1;
   border-radius: 8px;
-  background: var(--gray7);
+  background: var(--color-gray-border);
 }
 
 .scrollAreaScrollbar {
@@ -26,10 +26,10 @@
   touch-action: none;
 
   &:hover {
-    background: var(--gray1);
+    background: var(--color-gray-base);
 
     .scrollAreaThumb {
-      background: var(--gray10);
+      background: var(--color-gray-solid-hover);
     }
   }
 }

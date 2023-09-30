@@ -1,4 +1,4 @@
-// d2 colors
+/** D2 Colors **/
 :root {
   --exotic: rgb(206, 174, 51);
   --legendary: rgb(82, 47, 101);
@@ -9,7 +9,13 @@
   --dark-gold: rgb(183, 140, 37);
 }
 
-// Radix colors
+/** Monochrome **/
+:root {
+  --black: black;
+  --white: white;
+}
+
+/** Radix UI Colors **/
 
 :root {
   --tomato-1: hsl(10, 23%, 9.4%);

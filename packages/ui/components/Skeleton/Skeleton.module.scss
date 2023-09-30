@@ -12,7 +12,7 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: var(--grayBgSubtle);
+  background: var(--color-gray-bg-subtle);
 
   &::before {
     content: "";
