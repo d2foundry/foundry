@@ -100,7 +100,7 @@
   // margin-top: var(--spacing-1);
   text-align: center;
   padding: var(--spacing-3) var(--spacing-3);
-  border-bottom: 1px solid var(--grayLine);
+  border-bottom: 1px solid var(--color-gray-line);
 
   @media (width >= 640px) {
     text-align: left;
@@ -136,10 +136,10 @@
 
 .description {
   margin: 0;
-  margin-top: var(--spacing-0_5);
+  margin-top: var(--spacing-0-half);
 
   line-height: 1.25rem;
-  color: var(--grayText);
+  color: var(--color-gray-text);
   font-size: var(--font-size-regular);
 }
 
@@ -150,10 +150,10 @@
   z-index: 50;
   width: 100%;
   // padding: var(--spacing-3);
-  border: 1px solid var(--grayLine);
+  border: 1px solid var(--color-gray-line);
   border-bottom-right-radius: var(--border-radius-md);
   border-bottom-left-radius: var(--border-radius-md);
-  background-color: var(--grayBg);
+  background-color: var(--color-gray-bg);
   box-shadow: var(--shadow-lg);
   // gap: 1rem;
   height: 100%;

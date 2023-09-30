@@ -7,10 +7,10 @@
 
   // height: 1.25rem;
   padding-inline: var(--spacing-1);
-  border: 1px solid var(--grayLine);
+  border: 1px solid var(--color-gray-line);
   border-radius: var(--border-radius-xs);
-  background: var(--grayBgSubtle);
-  color: var(--grayText);
+  background: var(--color-gray-bg-subtle);
+  color: var(--color-gray-text);
   font-family: var(--font-display);
   font-size: var(--font-size-regular);
   font-weight: 400;
@@ -22,15 +22,15 @@
   height: 1.25rem;
   padding: 4px;
   border-radius: 4px;
-  background-color: var(--grayBgActive);
-  color: var(--grayTextContrast);
+  background-color: var(--color-gray-bg-active);
+  color: var(--color-gray-text-contrast);
   font-family: inherit;
   font-size: var(--font-size-regular);
   font-weight: 400;
 }
 
 .kbd + kbd {
-  margin-left: var(--spacing-0_5);
+  margin-left: var(--spacing-0-half);
 }
 
 .kbd span + span {

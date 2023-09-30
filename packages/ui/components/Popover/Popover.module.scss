@@ -58,60 +58,7 @@
   }
 }
 
-// .dialogOverlay {
-//   background-color: var(--black-9);
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   z-index: 999;
-//   opacity: 1;
-// }
-
-// .popoverPortal {
-//   &[data-radix-popper-content-wrapper] {
-//     bottom: 0;
-//   }
-// }
-
-// .dialogContent {
-//   position: fixed;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   width: 100%;
-//   max-width: 100%;
-//   z-index: 999;
-//   background-color: var(--grayBg);
-//   padding: var(--spacing-2);
-//   padding-bottom: var(--spacing-4);
-//   font-size: var(--font-size-body-sm);
-//   line-height: 1;
-//   color: var(--gray-12);
-//   border-top: 1px solid var(--grayBorder);
-//   border-top-right-radius: var(--border-radius-sm);
-//   border-top-left-radius: var(--border-radius-sm);
-//   animation: contentShow 250ms ease;
-// }
-
 .content {
-  // position: fixed;
-  // bottom: 0;
-  // width: 100%;
-  // max-width: 100%;
-  // z-index: 999;
-  // background-color: var(--grayBg);
-  // padding: var(--spacing-2);
-  // padding-bottom: var(--spacing-4);
-  // font-size: var(--font-size-body-sm);
-  // line-height: 1;
-  // color: var(--gray-12);
-  // border-top: 1px solid var(--grayBorder);
-  // border-top-right-radius: var(--border-radius-sm);
-  // border-top-left-radius: var(--border-radius-sm);
-  // animation: contentShow 250ms ease;
-  // @media (min-width: 600px) {
   z-index: 99;
   width: 260px;
   padding: var(--spacing-2);
@@ -120,11 +67,11 @@
 
   animation-duration: 200ms;
   animation-timing-function: ease-out;
-  border: 1px solid var(--grayBorder);
+  border: 1px solid var(--color-gray-border);
   border-radius: var(--border-radius-xs);
-  background-color: var(--grayBg);
+  background-color: var(--color-gray-bg);
   box-shadow: var(--shadow-2xl);
-  color: var(--gray-12);
+  color: var(--color-gray-text-contrast);
 
   // line-height: 1;
   font-size: var(--font-size-body-sm);
@@ -163,8 +110,8 @@
 }
 
 .arrow {
-  stroke: var(--grayBorder);
-  fill: var(--grayBg);
+  stroke: var(--color-gray-border);
+  fill: var(--color-gray-bg);
 }
 
 .popoverHeader {
@@ -174,7 +121,7 @@
   // margin-left: var(--spacing-3);
   padding: 0;
   padding-bottom: var(--spacing-1);
-  color: var(--grayTextContrast);
+  color: var(--color-gray-text-contrast);
 
   // composes: heading2 from "@styles/typography.scss";
   font-size: var(--font-size-regular);
@@ -182,5 +129,5 @@
   letter-spacing: var(--letter-spacing-regular);
   line-height: 1;
 
-  // border-bottom: 1px solid var(--grayBorder);
+  // border-bottom: 1px solid var(--color-gray-border);
 }

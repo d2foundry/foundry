@@ -1,10 +1,10 @@
 .badge {
   display: inline;
-  padding: var(--spacing-0_5) var(--spacing-1);
-  border: 1px solid var(--accentBorder);
+  padding: var(--spacing-0-half) var(--spacing-1);
+  border: 1px solid var(--color-accent-border);
   border-radius: var(--border-radius-pill);
-  background-color: var(--accentBg);
-  color: var(--accentText);
+  background-color: var(--color-accent-bg);
+  color: var(--color-accent-text);
   font-size: 0.75rem;
   line-height: 1;
 

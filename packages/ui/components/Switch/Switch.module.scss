@@ -4,29 +4,29 @@
   position: relative;
   width: 36px;
   height: 20px;
-  border: 1px solid var(--grayBorder);
+  border: 1px solid var(--color-gray-border);
   border-radius: 9999px;
-  background-color: var(--grayBg);
+  background-color: var(--color-gray-bg);
 
   // box-shadow: 0 2px 10px var(--black-7);
   -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
 
   &:hover {
-    border-color: var(--grayBorderHover);
-    background-color: var(--grayBgHover);
+    border-color: var(--color-gray-border-hover);
+    background-color: var(--color-gray-bg-hover);
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px var(--accentFocusRing);
+    box-shadow: 0 0 0 1px var(--color-accent-focus-ring);
   }
 
   &[data-state="checked"] {
-    border-color: var(--accentBorder);
-    background-color: var(--accentSolid);
+    border-color: var(--color-accent-border);
+    background-color: var(--color-accent-solid);
 
     &:hover {
-      border-color: var(--accentBorderHover);
-      background-color: var(--accentSolidHover);
+      border-color: var(--color-accent-border-hover);
+      background-color: var(--color-accent-solid-hover);
     }
   }
 }

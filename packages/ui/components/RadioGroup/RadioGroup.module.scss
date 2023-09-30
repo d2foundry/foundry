@@ -1,13 +1,13 @@
 .radioGroupRoot {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-1_5);
+  gap: var(--spacing-1-half);
 }
 
 .radioGroupItemLabel {
   display: flex;
   align-items: center;
-  color: var(--grayTextContrast);
+  color: var(--color-gray-text-contrast);
   font-size: var(--font-size-body-sm);
   line-height: 1rem;
   gap: var(--spacing-1);
@@ -21,35 +21,35 @@
   height: 0.875rem;
   transition: 150ms ease;
   transition-property: border-color, background-color;
-  border: 1px solid var(--grayBorder);
+  border: 1px solid var(--color-gray-border);
   border-radius: 100%;
-  background-color: var(--grayBg);
+  background-color: var(--color-gray-bg);
 
   &:hover {
-    border-color: var(--grayBorderHover);
-    background-color: var(--grayBgHover);
+    border-color: var(--color-gray-border-hover);
+    background-color: var(--color-gray-bg-hover);
   }
 
   &:focus-visible {
-    box-shadow: 0 0 0 2px var(--accentFocusRing);
+    box-shadow: 0 0 0 2px var(--color-accent-focus-ring);
   }
 
   @supports not selector(:focus-visible) {
     &:focus {
       /* Fallback for browsers without :focus-visible support */
-      box-shadow: 0 0 0 2px var(--accentFocusRing);
+      box-shadow: 0 0 0 2px var(--color-accent-focus-ring);
     }
   }
 
   &:active {
     transition-property: none;
-    background-color: var(--grayBgActive);
+    background-color: var(--color-gray-bg-active);
   }
 
   &[data-state="checked"] {
     transition-property: none;
-    border-color: var(--accentText);
-    background-color: var(--accentSolid);
+    border-color: var(--color-accent-text);
+    background-color: var(--color-accent-solid);
   }
 }
 
@@ -70,5 +70,5 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--grayTextContrast);
+  background-color: var(--color-gray-text-contrast);
 }

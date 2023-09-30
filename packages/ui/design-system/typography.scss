@@ -1,3 +1,54 @@
+:root {
+  --font-display: neue-haas-grotesk-display, "Neue Haas Grotesk Display",
+    "Neue Arial Grotesk Display", Arial, sans-serif;
+  --font-text: neue-haas-grotesk-text, "Neue Haas Grotesk Text",
+    "Neue Arial Grotesk", Arial, sans-serif;
+}
+
+:root {
+  --font-size-small: 0.75rem;
+  --font-size-regular: 0.875rem;
+  --font-size-large: 1rem;
+
+  --line-height-small: 1rem;
+  --line-height-regular: 1.5rem;
+  --line-height-large: 1.5rem;
+
+  --letter-spacing-small: 0.005em;
+  --letter-spacing-regular: -0.001em;
+  --letter-spacing-large: -0.006em;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --font-weight-black: 700;
+
+  --font-size-heading-splash: 2rem;
+  --font-size-heading-1: 1.5rem;
+  --font-size-heading-2: 1.25rem;
+  --font-size-heading-3: 1.125rem;
+  --font-size-heading-4: 1rem;
+
+  --line-height-heading-splash: 3rem;
+  --line-height-heading-1: 2rem;
+  --line-height-heading-2: 2rem;
+  --line-height-heading-3: 2rem;
+  --line-height-heading-4: 1.5rem;
+
+  --font-weight-splash: 700;
+  --font-weight-heading: 600;
+
+  --letter-spacing-heading-splash: -0.016em;
+  --letter-spacing-heading-1: -0.014em;
+  --letter-spacing-heading-2: -0.011em;
+  --letter-spacing-heading-3: -0.009em;
+  --letter-spacing-heading-4: -0.006em;
+
+  --font-size-label: 0.875rem;
+  --line-height-label: 1.5rem;
+  --letter-spacing-label: -0.001em;
+}
+
 .textSmall {
   font-family: var(--font-text);
   font-size: var(--font-size-small);

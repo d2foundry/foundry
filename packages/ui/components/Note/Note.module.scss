@@ -3,7 +3,7 @@
   align-items: center;
   width: 100%;
   height: min-content;
-  padding: var(--spacing-1_5) var(--spacing-2);
+  padding: var(--spacing-1-half) var(--spacing-2);
   border: 1px solid;
   border-radius: var(--border-radius-sm);
   font-size: var(--font-size-regular);
@@ -12,21 +12,27 @@
 }
 
 .info {
-  border-color: var(--accentBorder);
-  background-color: var(--accentBg);
-  color: var(--accentText);
+  border-color: var(--color-accent-border);
+  background-color: var(--color-accent-bg);
+  color: var(--color-accent-text);
 }
 
 .success {
-  border-color: var(--green-7);
-  background-color: var(--green-3);
-  color: var(--green-11);
+  border-color: var(--color-success-border);
+  background-color: var(--color-success-bg);
+  color: var(--color-success-text);
 }
 
 .warning {
-  border-color: var(--warningBorder);
-  background-color: var(--warningBg);
-  color: var(--warningText);
+  border-color: var(--color-warning-border);
+  background-color: var(--color-warning-bg);
+  color: var(--color-warning-text);
+}
+
+.destructive {
+  border-color: var(--color-danger-border);
+  background-color: var(--color-danger-bg);
+  color: var(--color-danger-text);
 }
 
 .close {

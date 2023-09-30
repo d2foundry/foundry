@@ -10,7 +10,6 @@
   // line-height: 1.25rem;
   gap: var(--spacing-1);
 
-  // background-color: var(--gray-3);
   // padding: var(--spacing-2) 0 0;
 }
 
@@ -38,7 +37,7 @@
   width: 1px;
   height: var(--spacing-3);
   margin: auto var(--spacing-1);
-  border-left: 1px solid var(--grayLine);
+  border-left: 1px solid var(--color-gray-line);
 }
 
 .toolbarButton {
@@ -51,16 +50,16 @@
   min-height: 1.75rem;
   padding: 0 var(--spacing-2);
 
-  // padding-bottom: var(--spacing-0_5);
+  // padding-bottom: var(--spacing-0-half);
   transition: 150ms ease;
   transition-property: border-color, color, background;
-  // border: 1px solid var(--grayBorder);
+  // border: 1px solid var(--color-gray-border);
   // border-radius: var(--border-radius-xs);
-  // background-color: var(--grayBg);
+  // background-color: var(--color-gray-bg);
 
-  // padding-top: var(--spacing-0_5);
+  // padding-top: var(--spacing-0-half);
   box-shadow: none;
-  color: var(--gray11);
+  color: var(--color-gray-text);
   font-size: var(--font-size-regular);
   line-height: calc(1.75rem - 2px);
   white-space: nowrap;
@@ -69,9 +68,9 @@
   // height: 100%;
   &:hover {
     z-index: 10;
-    border-color: var(--grayBorderHover);
-    background-color: var(--grayBgHover);
-    color: var(--gray12);
+    border-color: var(--color-gray-border-hover);
+    background-color: var(--color-gray-bg-hover);
+    color: var(--color-gray-text-contrast);
   }
 
   &.dangerHover:hover {
@@ -85,22 +84,22 @@
   }
 
   &:active {
-    background-color: var(--grayBgActive);
+    background-color: var(--color-gray-bg-active);
   }
 
   &[data-state="on"],
   &.active {
-    border-color: var(--accentBorder);
-    background-color: var(--accentBgActive);
-    color: var(--gray12);
+    border-color: var(--color-accent-border);
+    background-color: var(--color-accent-bg-active);
+    color: var(--color-gray-text-contrast);
 
     &:hover {
-      border-color: var(--accentBorderHover);
-      background-color: var(--accentBgHover);
+      border-color: var(--color-accent-border-hover);
+      background-color: var(--color-accent-bg-hover);
     }
 
     &:active {
-      background-color: var(--accentBgActive);
+      background-color: var(--color-accent-bg-active);
     }
   }
 
@@ -142,7 +141,7 @@
     width: 15px;
     height: 15px;
 
-    // color: var(--gray11);
+    // color: var(--color-gray-text);
   }
 
   & > button:not(:last-of-type),
@@ -199,12 +198,12 @@
   display: inline-flex;
   position: relative;
 
-  // padding-top: var(--spacing-0_5);
-  padding-left: var(--spacing-1_5);
-  border: 1px solid var(--grayBorder);
-  background-color: var(--grayBg);
+  // padding-top: var(--spacing-0-half);
+  padding-left: var(--spacing-1-half);
+  border: 1px solid var(--color-gray-border);
+  background-color: var(--color-gray-bg);
   box-shadow: none;
-  color: var(--gray11);
+  color: var(--color-gray-text);
   line-height: calc(1.75rem - 2px);
 
   // border-right: none;
@@ -217,12 +216,12 @@
     margin-bottom: 0;
   }
 
-  // padding-bottom: var(--spacing-0_5);
+  // padding-bottom: var(--spacing-0-half);
   // height: 100%;
   &:hover {
-    border-color: var(--grayBorderHover);
-    background-color: var(--grayBgHover);
-    color: var(--gray12);
+    border-color: var(--color-gray-border-hover);
+    background-color: var(--color-gray-bg-hover);
+    color: var(--color-gray-text-contrast);
   }
 
   // border-radius: var(--border-radius-xs) 0 0 var(--border-radius-xs);
@@ -234,22 +233,22 @@
   //   bottom: 0;
   //   margin: auto;
   //   height: 70%;
-  //   border-left: 1px solid var(--grayBorder);
+  //   border-left: 1px solid var(--color-gray-border);
   // }
 
   &[data-state="on"],
   &.active {
-    border-color: var(--accentBorder);
-    background-color: var(--accentBgActive);
-    color: var(--gray12);
+    border-color: var(--color-accent-border);
+    background-color: var(--color-accent-bg-active);
+    color: var(--color-gray-text-contrast);
 
     &:hover {
-      border-color: var(--accentBorderHover);
-      background-color: var(--accentBgHover);
+      border-color: var(--color-accent-border-hover);
+      background-color: var(--color-accent-bg-hover);
     }
 
     &:active {
-      background-color: var(--accentBgActive);
+      background-color: var(--color-accent-bg-active);
     }
   }
 }
@@ -262,11 +261,11 @@
   // height: 100% !important;
   margin: 0;
   padding: 0 var(--spacing-1);
-  border: 1px solid var(--grayBorder);
+  border: 1px solid var(--color-gray-border);
   border-left: none;
   border-radius: 0 var(--border-radius-xs) var(--border-radius-xs) 0;
-  background-color: var(--grayBg);
-  color: var(--gray11);
+  background-color: var(--color-gray-bg);
+  color: var(--color-gray-text);
 }
 
 .enhanceButton {
@@ -277,21 +276,17 @@
   height: min-content;
   margin: 0;
 
-  // margin-left: auto;
-  // flex: 1;
   padding: var(--spacing-1) var(--spacing-1);
   border: none;
   border-radius: var(--border-radius-xs);
   background: none;
-
-  // background-color: var(--gray-4);
-  color: var(--foreground-80);
+  color: var(--color-gray-text);
   font-size: var(--font-size-body-sm);
   cursor: pointer;
-  gap: var(--spacing-0_5);
+  gap: var(--spacing-0-half);
 }
 
 .enhanceButton:hover {
-  background-color: var(--gray-4);
-  color: var(--forground);
+  background-color: var(--color-gray-bg-hover);
+  color: var(--color-gray-text-contrast);
 }

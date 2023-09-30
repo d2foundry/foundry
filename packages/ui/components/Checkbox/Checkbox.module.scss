@@ -8,46 +8,46 @@ button.checkboxRoot {
   padding: 0;
   transition: 150ms ease;
   transition-property: background-color, border-color;
-  border: 1px solid var(--grayBorder);
+  border: 1px solid var(--color-gray-border);
   border-radius: var(--border-radius-xs);
   outline: 0;
-  background-color: var(--grayBg);
+  background-color: var(--color-gray-bg);
   appearance: none;
 
   &:hover {
-    border-color: var(--grayBorderHover);
-    background-color: var(--grayBgHover);
+    border-color: var(--color-gray-border-hover);
+    background-color: var(--color-gray-bg-hover);
   }
 
   &:focus-visible {
-    box-shadow: 0 0 0 2px var(--accentFocusRing);
+    box-shadow: 0 0 0 2px var(--color-accent-focus-ring);
   }
 
   @supports not selector(:focus-visible) {
     &:focus {
       /* Fallback for browsers without :focus-visible support */
-      box-shadow: 0 0 0 2px var(--accentFocusRing);
+      box-shadow: 0 0 0 2px var(--color-accent-focus-ring);
     }
   }
 
   &[data-state="checked"] {
-    border-color: var(--accentBorder);
-    background-color: var(--accentSolid);
+    border-color: var(--color-accent-border);
+    background-color: var(--color-accent-solid);
 
     &:hover {
-      border-color: var(--accentBorderHover);
-      background-color: var(--accentSolidHover);
+      border-color: var(--color-accent-border-hover);
+      background-color: var(--color-accent-solid-hover);
     }
   }
 
   &[disabled] {
-    border-color: var(--grayLine);
-    background-color: var(--grayBg);
-    color: var(--graySolid);
+    border-color: var(--color-gray-line);
+    background-color: var(--color-gray-bg);
+    color: var(--color-gray-solid);
     cursor: not-allowed;
 
     & + label {
-      color: var(--grayText);
+      color: var(--color-gray-text);
       cursor: not-allowed;
     }
   }
@@ -55,9 +55,9 @@ button.checkboxRoot {
 
 .checkboxIndicator {
   display: inline-flex;
-  color: var(--grayText);
+  color: var(--color-gray-text);
 
   &[data-state="checked"] {
-    color: var(--accentTextContrast);
+    color: var(--color-accent-text-contrast);
   }
 }

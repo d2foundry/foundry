@@ -29,11 +29,11 @@
   max-height: 75dvh;
   overflow: hidden;
   animation: contentShow 250ms ease;
-  border-top: 1px solid var(--grayBorder);
+  border-top: 1px solid var(--color-gray-border);
   border-top-left-radius: var(--border-radius-sm);
   border-top-right-radius: var(--border-radius-sm);
-  background-color: var(--grayBg);
-  color: var(--gray-12);
+  background-color: var(--color-gray-bg);
+  color: var(--color-gray-text-contrast);
   font-size: var(--font-size-body-sm);
   line-height: 1;
 }

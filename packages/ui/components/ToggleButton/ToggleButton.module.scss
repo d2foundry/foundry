@@ -1,28 +1,28 @@
 .toggleButton {
   &[data-state="on"] {
-    background: var(--grayBgActive);
-    color: var(--gray11);
+    background: var(--color-gray-bg-active);
+    color: var(--color-gray-text);
 
     &:hover {
-      background: var(--grayBorder);
-      color: var(--gray12);
+      background: var(--color-gray-border);
+      color: var(--color-gray-text-contrast);
     }
 
     &:active {
-      background: var(--grayBgActive);
-      color: var(--gray12);
+      background: var(--color-gray-bg-active);
+      color: var(--color-gray-text-contrast);
     }
 
-    // border: 1px solid var(--accentBorder);
+    // border: 1px solid var(--color-accent-border);
   }
 
   &:hover {
-    background: var(--grayBgHover);
-    color: var(--gray12);
+    background: var(--color-gray-bg-hover);
+    color: var(--color-gray-text-contrast);
   }
 
   &:active {
-    background: var(--grayBgActive);
-    color: var(--gray12);
+    background: var(--color-gray-bg-active);
+    color: var(--color-gray-text-contrast);
   }
 }
