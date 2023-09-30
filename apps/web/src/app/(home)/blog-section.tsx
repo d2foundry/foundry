@@ -48,7 +48,7 @@ function ChangelogCard(post: Changelog) {
     <div className="mb-8">
       <h2 className="mb-1 text-xl">
         <Link
-          href={`/posts/${post.url}`}
+          href={`/changelog/${post.url}`}
           className="text-blue-700 hover:text-blue-900 dark:text-blue-400"
         >
           {post.title}
