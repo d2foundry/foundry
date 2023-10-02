@@ -1,5 +1,6 @@
-import { Flex } from "@foundry/ui/components";
+import { Container, Flex } from "@foundry/ui/components";
 import { DocsSidebarNav } from "./sidebar";
+import styles from "./layout.module.scss";
 
 export default function Layout({
   children,
@@ -7,10 +8,12 @@ export default function Layout({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <Flex>
-      <DocsSidebarNav />
-      <Flex direction="column">{children}</Flex>
+    <Container>
+      <Flex>
+        <DocsSidebarNav />
+        <Flex direction="column">{children}</Flex>
+      </Flex>
       {/* <Toc /> */}
-    </Flex>
+    </Container>
   );
 }

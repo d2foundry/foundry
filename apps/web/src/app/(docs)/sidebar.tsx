@@ -1,5 +1,5 @@
 "use client";
-import { Flex } from "@foundry/ui/components";
+import { Flex, Heading } from "@foundry/ui/components";
 import { cn } from "@foundry/ui/utils";
 // import { DesignDoc, Doc, allDesignDocs } from "contentlayer/generated";
 import Link from "next/link";
@@ -31,12 +31,10 @@ export function DocsSidebarNav() {
   }
 
   return items?.length ? (
-    <Flex direction="column">
+    <Flex direction="column" style={{ padding: "var(--spacing-1" }} gap="2">
       {items.map((item, index) => (
         <div key={index} className={cn("pb-4")}>
-          <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-semibold">
-            {item.title}
-          </h4>
+          <Heading as="h3">{item.title}</Heading>
           {item?.items?.length && (
             <DocsSidebarNavItems items={item.items} pathname={pathname} />
           )}
@@ -56,7 +54,7 @@ export function DocsSidebarNavItems({
   pathname,
 }: DocsSidebarNavItemsProps) {
   return items?.length ? (
-    <Flex direction="column">
+    <Flex direction="column" gap="1">
       {items.map((item, index) =>
         item.href && !item.disabled ? (
           <Link

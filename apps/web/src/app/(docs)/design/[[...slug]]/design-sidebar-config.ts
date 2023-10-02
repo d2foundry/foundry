@@ -42,7 +42,11 @@ export const DESIGN_SIDEBAR_CONFIG = [
         href: "/design/components/button",
         items: [],
       },
-
+      {
+        title: "Card",
+        href: "/design/components/card",
+        items: [],
+      },
       {
         title: "Checkbox",
         href: "/design/components/checkbox",

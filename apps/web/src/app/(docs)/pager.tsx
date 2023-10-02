@@ -18,7 +18,7 @@ export function DocsPager({ doc }: DocsPagerProps) {
   }
 
   return (
-    <Flex>
+    <Flex justify="between">
       {prev?.href ? (
         <Link
           href={prev.href}

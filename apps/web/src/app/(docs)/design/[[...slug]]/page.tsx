@@ -3,7 +3,7 @@ import { allDesignDocs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 
 import { Client } from "./client";
-import { DocsPager, getPagerForDoc } from "../../pager";
+import { DocsPager } from "../../pager";
 
 interface DocPageProps {
   params: {
