@@ -1,0 +1,35 @@
+.Card {
+  --card-inner-padding: var(--spacing-3);
+  --card-max-width: 360px;
+
+  width: 100%;
+  max-width: var(--card-max-width);
+
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-gray-border);
+  color: var(--color-gray-text);
+}
+
+.CardHeader {
+  padding: var(--card-inner-padding);
+}
+.CardTitle {
+  color: var(--color-gray-text-contrast);
+  letter-spacing: var(--letter-spacing-large);
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-large);
+}
+
+.CardDescription {
+  color: var(--color-gray-text);
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
+}
+
+.CardContent {
+  padding: 0 var(--card-inner-padding) var(--card-inner-padding);
+}
+
+.CardFooter {
+  padding: 0 var(--card-inner-padding) var(--card-inner-padding);
+}

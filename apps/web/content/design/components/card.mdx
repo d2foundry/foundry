@@ -1,0 +1,66 @@
+---
+title: Card
+description: Displays a card.
+---
+
+<ComponentPreview>
+  <Card>
+    <CardHeader>
+      <CardTitle>Card</CardTitle>
+      <CardDescription>Hello! This is a card.</CardDescription>
+    </CardHeader>
+    <CardContent>
+      <Flex direction="column" gap="2">
+        <Flex direction="column" gap="1">
+          <Label htmlFor="my-input">Display name</Label>
+          <Input placeholder="Lord Shaxx" id="my-input" />
+        </Flex>
+        <Flex direction="column" gap="1">
+          <Label htmlFor="my-input">Favorite color</Label>
+          <Input placeholder="Chartreuse" id="my-input" />
+        </Flex>
+      </Flex>
+    </CardContent>
+    <CardFooter>
+      <Button>Alright</Button>
+    </CardFooter>
+  </Card>
+</ComponentPreview>
+
+## Usage
+
+```tsx
+import {
+  Card,
+  CardHeader,
+  CardDescription,
+  CardTitle,
+  CardContent,
+  CardFooter,
+} from "@foundry/ui/components";
+```
+
+```tsx
+<ComponentPreview>
+  <Card>
+    <CardHeader>
+      <CardTitle>Card</CardTitle>
+      <CardDescription>Hello! This is a card.</CardDescription>
+    </CardHeader>
+    <CardContent>
+      <Flex direction="column" gap="3">
+        <Flex direction="column" gap="1">
+          <Label htmlFor="my-input">Display name</Label>
+          <Input placeholder="Lord Shaxx" id="my-input" />
+        </Flex>
+        <Flex direction="column" gap="1">
+          <Label htmlFor="my-input">Favorite color</Label>
+          <Input placeholder="Chartreuse" id="my-input" />
+        </Flex>
+      </Flex>
+    </CardContent>
+    <CardFooter>
+      <Button>Alright</Button>
+    </CardFooter>
+  </Card>
+```

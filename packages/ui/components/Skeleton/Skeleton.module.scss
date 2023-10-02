@@ -19,11 +19,11 @@
     position: absolute;
     inset: 0;
     animation: shimmer 2s infinite ease;
-    border-top: 1px solid var(--whiteA3);
+    border-top: 1px solid var(--white-a3);
     background: linear-gradient(
       to right,
       transparent,
-      var(--whiteA3),
+      var(--white-a3),
       transparent
     );
   }
@@ -40,7 +40,7 @@
     background: linear-gradient(
       90deg,
       transparent,
-      var(--whiteA3) 50%,
+      var(--white-a3) 50%,
       transparent
     );
   }

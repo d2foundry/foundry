@@ -1,0 +1,19 @@
+.inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--page-width);
+  min-height: 100vh;
+  margin: 0 auto;
+  // background-color: var(--appBg);
+
+  @media (width >= 768px) {
+    gap: var(--spacing-2);
+    flex-direction: row;
+  }
+}
+
+.container {
+  width: 100%;
+  // background-color: var(--appBg);
+}

@@ -17,12 +17,22 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
     actions: [
       {
         type: "add",
-        path: "/src/components/{{pascalCase name}}/index.tsx",
+        path: "./components/{{pascalCase name}}/{{pascalCase name}}.module.scss",
+        templateFile: "templates/scss_module.hbs",
+      },
+      {
+        type: "add",
+        path: "./components/{{pascalCase name}}/{{pascalCase name}}.tsx",
         templateFile: "templates/component.hbs",
       },
       {
+        type: "add",
+        path: "./components/{{pascalCase name}}/index.tsx",
+        template: 'export * from "./{{pascalCase name}}";',
+      },
+      {
         type: "append",
-        path: "/src/index.tsx",
+        path: "./components/index.tsx",
         pattern: /(?<insertion>\/\/ component exports)/g,
         template: 'export * from "./{{pascalCase name}}";',
       },
