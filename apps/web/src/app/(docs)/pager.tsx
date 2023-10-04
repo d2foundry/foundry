@@ -4,6 +4,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { DesignDoc, Doc } from "contentlayer/generated";
 import Link from "next/link";
 import { DESIGN_SIDEBAR_CONFIG } from "./design/[[...slug]]/design-sidebar-config";
+import { DOCS_SIDEBAR_CONFIG } from "./docs/[[...slug]]/docs-sidebar-config";
 import { NavItem, NavItemWithChildren } from "./sidebar";
 
 interface DocsPagerProps {
@@ -44,7 +45,14 @@ export function DocsPager({ doc }: DocsPagerProps) {
 }
 
 export function getPagerForDoc(doc: Doc | DesignDoc) {
-  const flattenedLinks = [null, ...flatten(DESIGN_SIDEBAR_CONFIG), null];
+  let config;
+  if (doc.type === "Doc") {
+    config = DOCS_SIDEBAR_CONFIG;
+  }
+  if (doc.type === "DesignDoc") {
+    config = DESIGN_SIDEBAR_CONFIG;
+  }
+  const flattenedLinks = [null, ...flatten(config), null];
   const activeIndex = flattenedLinks.findIndex(
     (link) => doc.slug === link?.href
   );
