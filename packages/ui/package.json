@@ -24,6 +24,8 @@
   },
   "license": "MIT",
   "scripts": {
+    "prepare": "panda codegen --clean",
+    "ship": "panda ship --outfile ./panda.buildinfo.json",
     "lint": "eslint .",
     "generate:component": "turbo gen react-component"
   },
@@ -64,9 +66,12 @@
     "sass": "^1.56.1"
   },
   "devDependencies": {
+    "@foundry/panda-preset": "workspace:*",
     "@foundry/eslint-config-custom": "workspace:*",
     "@foundry/tsconfig": "workspace:*",
     "@next/eslint-plugin-next": "^13.4.19",
+    "@pandacss/dev": "^0.15.4",
+    "@pandacss/types": "^0.15.4",
     "@turbo/gen": "^1.10.12",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",

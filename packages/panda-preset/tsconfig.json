@@ -1,0 +1,5 @@
+{
+  "extends": "@foundry/tsconfig/react-library.json",
+  "include": ["src", "dist"],
+  "exclude": ["build", "node_modules"]
+}

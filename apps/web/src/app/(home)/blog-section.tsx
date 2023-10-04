@@ -6,26 +6,19 @@ import {
   allChangelogs,
   Changelog,
 } from "contentlayer/generated";
+import { Flex, Heading } from "@foundry/ui/components";
 
 function PostCard(post: Post) {
   return (
-    <div className="mb-8">
-      <h2 className="mb-1 text-xl">
-        <Link
-          href={`/posts/${post.url}`}
-          className="text-blue-700 hover:text-blue-900 dark:text-blue-400"
-        >
-          {post.title}
-        </Link>
-      </h2>
-      <time dateTime={post.date} className="mb-2 block text-xs text-gray-600">
+    <Flex direction={"column"} shrink="0">
+      <Heading as="h2" size="2">
+        <Link href={`/posts/${post.url}`}>{post.title}</Link>
+      </Heading>
+      <time dateTime={post.date}>
         {format(parseISO(post.date), "LLLL d, yyyy")}
       </time>
-      <div
-        className="text-sm [&>*]:mb-3 [&>*:last-child]:mb-0"
-        dangerouslySetInnerHTML={{ __html: post.body.html }}
-      />
-    </div>
+      <div dangerouslySetInnerHTML={{ __html: post.body.html }} />
+    </Flex>
   );
 }
 
@@ -35,32 +28,24 @@ export function BlogSection() {
     .slice(0, 3);
 
   return (
-    <div className="mx-auto max-w-xl py-8">
+    <Flex direction="column" gap="4">
       {posts.map((post, idx) => (
         <PostCard key={idx} {...post} />
       ))}
-    </div>
+    </Flex>
   );
 }
 
 function ChangelogCard(post: Changelog) {
   return (
-    <div className="mb-8">
-      <h2 className="mb-1 text-xl">
-        <Link
-          href={`/changelog/${post.url}`}
-          className="text-blue-700 hover:text-blue-900 dark:text-blue-400"
-        >
-          {post.title}
-        </Link>
-      </h2>
-      <time dateTime={post.date} className="mb-2 block text-xs text-gray-600">
+    <div>
+      <Heading as="h3" size="4">
+        <Link href={`/changelog/${post.url}`}>{post.title}</Link>
+      </Heading>
+      <time dateTime={post.date}>
         {format(parseISO(post.date), "LLLL d, yyyy")}
       </time>
-      <div
-        className="text-sm [&>*]:mb-3 [&>*:last-child]:mb-0"
-        dangerouslySetInnerHTML={{ __html: post.body.html }}
-      />
+      <div dangerouslySetInnerHTML={{ __html: post.body.html }} />
     </div>
   );
 }
@@ -70,10 +55,10 @@ export function ChangelogSection() {
     .slice(0, 3);
 
   return (
-    <div className="mx-auto max-w-xl py-8">
+    <Flex direction={"column"} gap="2">
       {posts.map((post, idx) => (
         <ChangelogCard key={idx} {...post} />
       ))}
-    </div>
+    </Flex>
   );
 }

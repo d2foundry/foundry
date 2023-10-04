@@ -1,11 +1,11 @@
-import { Flex } from "@foundry/ui/components";
+import { Container, Flex } from "@foundry/ui/components";
 import { Nav } from "@/components/Nav";
 
 export function SiteLayout({ children }: { children: React.ReactNode }) {
   return (
-    <Flex direction="column">
+    <Flex direction="column" sx={{ bg: "gray.1", color: "gray.11" }}>
       <Nav />
-      {children}
+      <Container>{children}</Container>
     </Flex>
   );
 }

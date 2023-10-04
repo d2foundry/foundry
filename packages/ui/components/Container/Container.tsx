@@ -1,14 +1,16 @@
 import React from "react";
 import styles from "./Container.module.scss";
 import { cva } from "class-variance-authority";
-import { cn } from "../../utils";
+import { css } from "@foundry/styled-system/css";
 const sizes = ["1", "2", "3", "4"] as const;
 const displayValues = ["none", "block"] as const;
-
-interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
+import {
+  container,
+  ContainerProperties,
+} from "@foundry/styled-system/patterns";
+interface ContainerProps extends ContainerProperties {
   children: React.ReactNode;
-  size?: (typeof sizes)[number];
-  display?: (typeof displayValues)[number];
+  className?: string;
 }
 export const containerPropDefs = cva(styles.Container, {
   variants: {
@@ -26,16 +28,16 @@ export const containerPropDefs = cva(styles.Container, {
 });
 
 export const Container = React.forwardRef<HTMLDivElement, ContainerProps>(
-  ({ children, size = "4", className, display, ...rest }, ref) => {
+  ({ children, className, ...rest }, ref) => {
     return (
       <div
         {...rest}
         ref={ref}
-        className={cn(containerPropDefs({ size, className }))}
-        style={{
-          ...(rest.style || {}),
-          display: display,
-        }}
+        className={css(container.raw({}), rest)}
+        // style={{
+        //   ...(rest.style || {}),
+        //   display: display,
+        // }}
       >
         <div className={styles.ContainerInner}>{children}</div>
       </div>

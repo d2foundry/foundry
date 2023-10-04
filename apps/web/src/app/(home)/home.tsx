@@ -1,6 +1,6 @@
 // "use client";
 import React from "react";
-
+import { css } from "@foundry/styled-system/css";
 // import Image from "next/image";
 // import Link from "next/link";
 
@@ -42,7 +42,7 @@ export function Home() {
       <div></div>
       <div className={styles.banner}>
         {/* <Shine /> */}
-        <span>{TAGLINE}</span>
+        <p className={css({ textStyle: "heading.md" })}>{TAGLINE}</p>
       </div>
       <Flex direction="row">
         <BlogSection />

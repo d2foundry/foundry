@@ -1,0 +1,637 @@
+{
+  "css": [
+    {
+      "type": "object",
+      "name": "css",
+      "box": {
+        "type": "array",
+        "value": [
+          {
+            "type": "map",
+            "value": {},
+            "node": "CallExpression",
+            "line": 36,
+            "column": 20
+          },
+          {
+            "type": "unresolvable",
+            "node": "BindingElement",
+            "line": 31,
+            "column": 27
+          }
+        ],
+        "node": "CallExpression",
+        "line": 36,
+        "column": 20
+      },
+      "data": [
+        {},
+        {}
+      ]
+    },
+    {
+      "type": "object",
+      "name": "css",
+      "box": {
+        "type": "array",
+        "value": [
+          {
+            "type": "unresolvable",
+            "node": "CallExpression",
+            "line": 31,
+            "column": 7
+          },
+          {
+            "type": "map",
+            "value": {},
+            "node": "CallExpression",
+            "line": 30,
+            "column": 23
+          },
+          {
+            "type": "map",
+            "value": {},
+            "node": "CallExpression",
+            "line": 30,
+            "column": 23
+          }
+        ],
+        "node": "CallExpression",
+        "line": 30,
+        "column": 23
+      },
+      "data": [
+        {},
+        {},
+        {}
+      ]
+    },
+    {
+      "type": "object",
+      "name": "css",
+      "box": {
+        "type": "unresolvable",
+        "node": "CallExpression",
+        "line": 36,
+        "column": 5
+      },
+      "data": [
+        {}
+      ]
+    }
+  ],
+  "cva": [
+    {
+      "type": "object",
+      "name": "cva",
+      "box": {
+        "type": "array",
+        "value": [
+          {
+            "type": "unresolvable",
+            "node": "Identifier",
+            "line": 15,
+            "column": 38
+          },
+          {
+            "type": "map",
+            "value": {},
+            "node": "CallExpression",
+            "line": 15,
+            "column": 34
+          }
+        ],
+        "node": "CallExpression",
+        "line": 15,
+        "column": 34
+      },
+      "data": [
+        {},
+        {
+          "variants": {
+            "size": {}
+          },
+          "defaultVariants": {
+            "size": "default"
+          }
+        }
+      ]
+    },
+    {
+      "type": "object",
+      "name": "cva",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 9,
+        "column": 23
+      },
+      "data": [
+        {
+          "base": {
+            "display": "block",
+            "textStyle": "heading.2"
+          },
+          "variants": {
+            "size": {
+              "1": {
+                "textStyle": "heading.1"
+              },
+              "2": {
+                "textStyle": "heading.2"
+              },
+              "3": {
+                "textStyle": "heading.3"
+              },
+              "4": {
+                "textStyle": "heading.4"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sva": [],
+  "jsx": [
+    {
+      "type": "jsx",
+      "name": "DropdownMenuPrimitive.Portal",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 17,
+        "column": 3
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "DropdownMenuPrimitive.Content",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 18,
+        "column": 5
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "DropdownMenuPrimitive.Arrow",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 28,
+        "column": 7
+      },
+      "data": [
+        {
+          "width": 12,
+          "height": 6
+        }
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "DropdownMenuPrimitive.Item",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 44,
+        "column": 3
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "DropdownMenuPrimitive.CheckboxItem",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 59,
+        "column": 3
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "DropdownMenuPrimitive.ItemIndicator",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 64,
+        "column": 5
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "DropdownMenuPrimitive.ItemIndicator",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 82,
+        "column": 5
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "DividerHorizontalIcon",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 65,
+        "column": 45
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "CheckIcon",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 66,
+        "column": 34
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "CheckIcon",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 83,
+        "column": 7
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "DropdownMenuPrimitive.RadioItem",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 80,
+        "column": 3
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "DropdownMenuPrimitive.Separator",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 93,
+        "column": 3
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Slot",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 42,
+        "column": 5
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Tag",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 43,
+        "column": 29
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "PopoverPrimitive.Portal",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 19,
+        "column": 3
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "PopoverPrimitive.Content",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 20,
+        "column": 5
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "PopoverPrimitive.Close",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 27,
+        "column": 7
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "IconButton",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 28,
+        "column": 9
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Cross2Icon",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 29,
+        "column": 11
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "PopoverPrimitive.Arrow",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 32,
+        "column": 7
+      },
+      "data": [
+        {
+          "width": 12,
+          "height": 8
+        }
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "RadixTooltip.Root",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 17,
+        "column": 3
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "RadixTooltip.Trigger",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 18,
+        "column": 5
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "RadixTooltip.Portal",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 21,
+        "column": 5
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "RadixTooltip.Content",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 22,
+        "column": 7
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "RadixTooltip.Arrow",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 30,
+        "column": 9
+      },
+      "data": [
+        {
+          "width": 12,
+          "height": 6
+        }
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "CheckIcon",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 81,
+        "column": 13
+      },
+      "data": [
+        {
+          "height": 20,
+          "width": 20
+        }
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "ColorCard",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 101,
+        "column": 9
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "ColorChip",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 164,
+        "column": 11
+      },
+      "data": [
+        {}
+      ]
+    }
+  ],
+  "recipe": {},
+  "pattern": {
+    "Flex": [
+      {
+        "type": "jsx-pattern",
+        "name": "Flex",
+        "box": {
+          "type": "map",
+          "value": {},
+          "node": "JsxSelfClosingElement",
+          "line": 19,
+          "column": 3
+        },
+        "data": [
+          {
+            "direction": "column",
+            "gap": "0"
+          }
+        ]
+      },
+      {
+        "type": "jsx-pattern",
+        "name": "Flex",
+        "box": {
+          "type": "map",
+          "value": {},
+          "node": "JsxSelfClosingElement",
+          "line": 58,
+          "column": 3
+        },
+        "data": [
+          {
+            "align": "center",
+            "justify": "end"
+          }
+        ]
+      }
+    ],
+    "container": [
+      {
+        "type": "pattern",
+        "name": "container",
+        "box": {
+          "type": "map",
+          "value": {},
+          "node": "CallExpression",
+          "line": 36,
+          "column": 24
+        },
+        "data": [
+          {}
+        ]
+      }
+    ],
+    "flex": [
+      {
+        "type": "pattern",
+        "name": "flex",
+        "box": {
+          "type": "map",
+          "value": {},
+          "node": "CallExpression",
+          "line": 31,
+          "column": 7
+        },
+        "data": [
+          {
+            "direction": "row",
+            "justify": "start"
+          }
+        ]
+      }
+    ]
+  }
+}

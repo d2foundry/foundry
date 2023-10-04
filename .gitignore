@@ -12,6 +12,7 @@ coverage
 .next/
 out/
 build
+dist
 
 # misc
 .DS_Store
@@ -38,3 +39,4 @@ yarn-error.log*
 # contentlayer
 .contentlayer
 synced/**/*
+styled-system

@@ -1,38 +1,17 @@
 import React from "react";
+import { css } from "@foundry/styled-system/css";
+import { SystemStyleObject } from "@foundry/styled-system/types";
+import {
+  flex,
+  FlexProperties,
+  StackProperties,
+} from "@foundry/styled-system/patterns";
 
-// const displayValues = ["none", "inline-flex", "flex"] as const;
-const directionValues = [
-  "row",
-  "column",
-  "row-reverse",
-  "column-reverse",
-] as const;
-const alignValues = ["start", "center", "end", "baseline", "stretch"] as const;
-const justifyValues = ["start", "center", "end", "between"] as const;
-const wrapValues = ["nowrap", "wrap", "wrap-reverse"] as const;
-const gapValues = [
-  "0",
-  "0.5",
-  "1",
-  "1.5",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-] as const;
-
-interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
-  children: React.ReactNode;
-  wrap?: (typeof wrapValues)[number];
-  direction?: (typeof directionValues)[number];
-  justify?: (typeof justifyValues)[number];
-  align?: (typeof alignValues)[number];
-  gap?: (typeof gapValues)[number];
-}
+type FlexProps = FlexProperties &
+  StackProperties & {
+    children: React.ReactNode;
+    sx?: SystemStyleObject;
+  };
 
 export const Flex = React.forwardRef<HTMLDivElement, FlexProps>(
   (
@@ -42,25 +21,21 @@ export const Flex = React.forwardRef<HTMLDivElement, FlexProps>(
       direction = "row",
       justify = "start",
       align,
-      gap = "0",
+      gap,
+      sx = {},
       ...rest
     },
     ref
   ) => {
+    const className = css(
+      flex.raw({ wrap, direction, justify, align, gap }),
+      {
+        ...rest,
+      },
+      sx
+    );
     return (
-      <div
-        {...rest}
-        style={{
-          ...(rest.style || {}),
-          display: "flex",
-          flexWrap: wrap,
-          flexDirection: direction,
-          justifyContent: justify === "between" ? `space-${justify}` : justify,
-          alignItems: align,
-          gap: `${parseInt(gap) * 8}px`,
-        }}
-        ref={ref}
-      >
+      <div className={className} ref={ref}>
         {children}
       </div>
     );
