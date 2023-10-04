@@ -39,7 +39,7 @@ This Turborepo has some additional tools already setup for you:
 
 ## Contribute
 
-Please refer to the contributing.md file for information about how to get involved. We welcome issues, questions, and pull requests.
+Please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file for information about how to get involved. We welcome issues, questions, and pull requests.
 
 
 ## License
