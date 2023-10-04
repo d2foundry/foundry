@@ -5,6 +5,7 @@ import { cn } from "@foundry/ui/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { DESIGN_SIDEBAR_CONFIG } from "./design/[[...slug]]/design-sidebar-config";
+import { DOCS_SIDEBAR_CONFIG } from "./docs/[[...slug]]/docs-sidebar-config";
 
 export interface NavItem {
   title: string;
@@ -28,6 +29,9 @@ export function DocsSidebarNav() {
   let items: SidebarNavItem[] = [];
   if (pathname?.includes("design")) {
     items = DESIGN_SIDEBAR_CONFIG;
+  }
+  if (pathname?.includes("docs")) {
+    items = DOCS_SIDEBAR_CONFIG;
   }
 
   return items?.length ? (

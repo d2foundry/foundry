@@ -36,6 +36,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
   }
 
   return (
+    <div>
     <article className="mx-auto max-w-xl py-8">
       <div className="mb-8 text-center">
         <h1 className="text-3xl font-bold">{doc.title}</h1>
@@ -45,6 +46,8 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
         dangerouslySetInnerHTML={{ __html: doc.body.html }}
       />
     </article>
+    <DocsPager doc={doc} />
+    </div>
   );
 }
 
