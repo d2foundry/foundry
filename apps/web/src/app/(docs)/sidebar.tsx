@@ -38,8 +38,14 @@ export function DocsSidebarNav() {
     <Flex direction="column" style={{ padding: "var(--spacing-1" }} gap="2">
       {items.map((item, index) => (
         <div key={index} className={cn("pb-4")}>
-          <Heading as="h3">{item.title}</Heading>
-          {item?.items?.length && (
+          {item.href ? (
+            <Link key={index} href={item.href}>
+              <Heading as="h3">{item.title}</Heading>
+            </Link>
+          ) : (
+            <Heading as="h3">{item.title}</Heading>
+          )}
+          {item?.items?.length > 0 && (
             <DocsSidebarNavItems items={item.items} pathname={pathname} />
           )}
         </div>
