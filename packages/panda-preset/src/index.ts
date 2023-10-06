@@ -1,4 +1,8 @@
-import { definePreset, defineTokens } from "@pandacss/dev";
+import {
+  definePreset,
+  defineSemanticTokens,
+  defineTokens,
+} from "@pandacss/dev";
 import type { Preset } from "@pandacss/types";
 import { textStyles } from "./textStyles";
 // import { semanticTokens } from "./semantic-tokens";
@@ -178,6 +182,17 @@ const theme = {
         "4": { value: "1rem" },
       },
     },
+    borders: {
+      gray: {
+        DEFAULT: {
+          value: "1px solid {colors.gray.7}",
+        },
+        subtle: { value: "1px solid {colors.gray.6}" },
+        hover: {
+          value: "1px solid {colors.gray.8}",
+        },
+      },
+    },
     fontWeights: {
       regular: { value: "400" },
       medium: { value: "500" },
@@ -186,8 +201,7 @@ const theme = {
     },
     fonts: {
       body: {
-        value: `neue-haas-grotesk-text, "Neue Haas Grotesk Text",
-    "Neue Arial Grotesk", Arial, sans-serif`,
+        value: `var(--font-neue-haas-grotesk-text), Arial, sans-serif`,
       },
       heading: { value: ["Roboto Mono", "sans-serif"] },
     },
@@ -200,6 +214,15 @@ const theme = {
       circle: { value: "50%" },
     },
   }),
+  semanticTokens: defineSemanticTokens({
+    colors: {
+      gray: {
+        text: {
+          value: "{colors.gray.11}",
+        },
+      },
+    },
+  }),
 };
 
 export const foundryPreset = definePreset({
@@ -210,6 +233,8 @@ export const foundryPreset = definePreset({
     html: {
       bg: "gray.1",
       color: "gray.11",
+      fontFamily: "body",
+      fontWeight: "400",
     },
   },
 }) as Preset;
