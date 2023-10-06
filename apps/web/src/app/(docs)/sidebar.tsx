@@ -5,6 +5,7 @@ import { cn } from "@foundry/ui/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { DESIGN_SIDEBAR_CONFIG } from "./design/[[...slug]]/design-sidebar-config";
+import { DOCS_SIDEBAR_CONFIG } from "./docs/[[...slug]]/docs-sidebar-config";
 
 export interface NavItem {
   title: string;
@@ -29,13 +30,22 @@ export function DocsSidebarNav() {
   if (pathname?.includes("design")) {
     items = DESIGN_SIDEBAR_CONFIG;
   }
+  if (pathname?.includes("docs")) {
+    items = DOCS_SIDEBAR_CONFIG;
+  }
 
   return items?.length ? (
     <Flex direction="column" style={{ padding: "var(--spacing-1" }} gap="2">
       {items.map((item, index) => (
         <div key={index} className={cn("pb-4")}>
-          <Heading as="h3">{item.title}</Heading>
-          {item?.items?.length && (
+          {item.href ? (
+            <Link key={index} href={item.href}>
+              <Heading as="h3">{item.title}</Heading>
+            </Link>
+          ) : (
+            <Heading as="h3">{item.title}</Heading>
+          )}
+          {item?.items?.length > 0 && (
             <DocsSidebarNavItems items={item.items} pathname={pathname} />
           )}
         </div>
