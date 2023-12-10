@@ -1,3 +1,5 @@
+import { SystemStyleObject } from "@pandacss/dev";
+
 const marginValues = [
   "auto",
   "0",
@@ -55,6 +57,10 @@ export interface PaddingProps {
   pr: (typeof paddingValues)[number];
   pb: (typeof paddingValues)[number];
   pl: (typeof paddingValues)[number];
+}
+
+export interface SxProp {
+  sx?: SystemStyleObject;
 }
 
 export type GlobalLayoutProps = MarginProps & PaddingProps;

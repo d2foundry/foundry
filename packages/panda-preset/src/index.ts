@@ -192,6 +192,15 @@ const theme = {
           value: "1px solid {colors.gray.8}",
         },
       },
+      accent: {
+        DEFAULT: {
+          value: "1px solid {colors.blue.7}",
+        },
+        subtle: { value: "1px solid {colors.blue.6}" },
+        hover: {
+          value: "1px solid {colors.blue.8}",
+        },
+      },
     },
     fontWeights: {
       regular: { value: "400" },
@@ -217,8 +226,35 @@ const theme = {
   semanticTokens: defineSemanticTokens({
     colors: {
       gray: {
+        base: {
+          value: "{colors.gray.1}",
+        },
+        bg: {
+          value: "{colors.gray.3}",
+          subtle: {
+            value: "{colors.gray.2}",
+          },
+          hover: {
+            value: "{colors.gray.4}",
+          },
+          active: {
+            value: "{colors.gray.5}",
+          },
+        },
+        focusRing: {
+          value: "{colors.gray.8}",
+        },
+        solid: {
+          value: "{colors.gray.9}",
+          hover: {
+            value: "{colors.gray.10}",
+          },
+        },
         text: {
           value: "{colors.gray.11}",
+          contrast: {
+            value: "{colors.gray.12}",
+          },
         },
       },
     },
