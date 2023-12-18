@@ -1,5 +1,1 @@
-:root {
-  --font-neue-haas-grotesk-display: neue-haas-grotesk-display, sans-serif;
-  --font-neue-haas-grotesk-text: neue-haas-grotesk-text, sans-serif;
-}
 @layer reset, base, tokens, recipes, utilities;

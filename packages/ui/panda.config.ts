@@ -1,5 +1,7 @@
 import { defineConfig } from "@pandacss/dev";
-import { foundryPreset } from "@foundry/panda-preset";
+// import { foundryPreset } from "@foundry/panda-preset";
+
+// import { preset } from "./theme";
 
 export default defineConfig({
   // Whether to use css reset
@@ -10,7 +12,7 @@ export default defineConfig({
     "./components/**/*.{js,jsx,ts,tsx}",
     "./demos/**/*.{js,jsx,ts,tsx}",
   ],
-  presets: ["@pandacss/preset-base", foundryPreset],
+  presets: ["@foundry/design-system"],
   // Files to exclude
   exclude: [],
   separator: "-",

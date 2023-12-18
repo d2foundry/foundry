@@ -66,7 +66,7 @@
     "sass": "^1.56.1"
   },
   "devDependencies": {
-    "@foundry/panda-preset": "workspace:*",
+    "@foundry/design-system": "workspace:*",
     "@foundry/eslint-config-custom": "workspace:*",
     "@foundry/tsconfig": "workspace:*",
     "@next/eslint-plugin-next": "^13.4.19",

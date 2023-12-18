@@ -31,7 +31,6 @@ export function Nav() {
             <Image
               src="/foundry_logo_transparent.png"
               className={css({
-                borderRadius: "sm",
                 border: "1px solid token(colors.gray.7)",
               })}
               height={32}
