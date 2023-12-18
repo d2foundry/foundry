@@ -1,37 +1,7 @@
-import { SystemStyleObject } from "@pandacss/dev";
+import { SystemStyleObject } from "@foundry/styled-system/types";
 
-const marginValues = [
-  "auto",
-  "0",
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "-1",
-  "-2",
-  "-3",
-  "-4",
-  "-5",
-  "-6",
-  "-7",
-  "-8",
-  "-9",
-] as const;
-
-export interface MarginProps {
-  m: (typeof marginValues)[number];
-  mx: (typeof marginValues)[number];
-  my: (typeof marginValues)[number];
-  mt: (typeof marginValues)[number];
-  mr: (typeof marginValues)[number];
-  mb: (typeof marginValues)[number];
-  ml: (typeof marginValues)[number];
-}
+type MarginProperties = "m" | "mx" | "my" | "mt" | "mr" | "mb" | "ml";
+export type MarginProps = Pick<SystemStyleObject, MarginProperties>;
 
 const paddingValues = [
   "auto",

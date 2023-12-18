@@ -11,7 +11,7 @@ import { Flex, Heading } from "@foundry/ui/components";
 function PostCard(post: Post) {
   return (
     <Flex direction={"column"} shrink="0">
-      <Heading as="h2" size="2">
+      <Heading as="h2" size="2xl">
         <Link href={`/posts/${post.url}`}>{post.title}</Link>
       </Heading>
       <time dateTime={post.date}>
@@ -39,7 +39,7 @@ export function BlogSection() {
 function ChangelogCard(post: Changelog) {
   return (
     <div>
-      <Heading as="h3" size="4">
+      <Heading as="h3" size="xl">
         <Link href={`/changelog/${post.url}`}>{post.title}</Link>
       </Heading>
       <time dateTime={post.date}>
