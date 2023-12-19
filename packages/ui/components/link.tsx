@@ -11,10 +11,16 @@ export type LinkProps = LinkVariantProps &
   TrimProps & {
     children?: React.ReactNode;
     asChild?: boolean;
-    href: string;
+    href?: string;
+    target?: string;
+    rel?: string;
   };
 
 export const Link = ({ asChild = false, children, ...props }: LinkProps) => {
   const Comp = asChild ? Slot : styled.a;
-  return <Comp className={link(props)}>{children}</Comp>;
+  return (
+    <Comp {...props} className={link(props)}>
+      {children}
+    </Comp>
+  );
 };

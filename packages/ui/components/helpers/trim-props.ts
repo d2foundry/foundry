@@ -4,5 +4,5 @@ type trimProperties = "trim";
 // export type TrimProps = Pick<SystemStyleObject, trimProperties> | undefined;
 
 export type TrimProps = {
-  trim?: SystemStyleObject["m"];
+  trim?: "both" | "start" | "end";
 };

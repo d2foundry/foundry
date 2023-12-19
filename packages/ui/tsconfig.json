@@ -1,5 +1,5 @@
 {
   "extends": "@foundry/tsconfig/react-library.json",
-  "include": ["."],
+  "include": [".", "node_modules/@foundry/styled-system"],
   "exclude": ["dist", "build", "node_modules"]
 }
