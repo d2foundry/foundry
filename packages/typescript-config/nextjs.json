@@ -10,6 +10,8 @@
     "jsx": "preserve",
     "noEmit": true,
     "resolveJsonModule": true,
-    "target": "es5"
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "incremental": true
   }
 }
