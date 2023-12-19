@@ -43,11 +43,12 @@ export const theme: Theme = {
 };
 
 export const preset: Preset = definePreset({
+  presets: [],
   theme,
-  globalCss: {
-    html: {
-      bg: "gray.1",
-      color: "gray.11",
+  conditions: {
+    extend: {
+      _dark: ".dark &",
+      _light: ".light &",
     },
   },
   utilities: {

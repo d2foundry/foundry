@@ -12,6 +12,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "dependencies": {
+    "@radix-ui/colors": "^3.0.0",
+    "pandacss-preset-radix-colors": "^0.1.6",
+    "ts-pattern": "^5.0.6"
+  },
   "devDependencies": {
     "@foundry/eslint-config-custom": "workspace:*",
     "@foundry/tsconfig": "workspace:*",

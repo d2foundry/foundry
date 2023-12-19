@@ -1,5 +1,5 @@
 import { defineSemanticTokens } from "@pandacss/dev";
-
+import { colors } from "./colors";
 export const semanticTokens = defineSemanticTokens({
   borders: {
     gray: {
@@ -22,6 +22,7 @@ export const semanticTokens = defineSemanticTokens({
     },
   },
   colors: {
+    ...colors,
     accent: {
       base: {
         value: "{colors.blue.1}",
@@ -53,48 +54,6 @@ export const semanticTokens = defineSemanticTokens({
         DEFAULT: { value: "{colors.blue.11}" },
         contrast: {
           value: "{colors.blue.12}",
-        },
-      },
-    },
-    gray: {
-      base: {
-        value: "{colors.gray.1}",
-      },
-      bg: {
-        DEFAULT: { value: "{colors.gray.3}" },
-        subtle: {
-          value: "{colors.gray.2}",
-        },
-        hover: {
-          value: "{colors.gray.4}",
-        },
-        active: {
-          value: "{colors.gray.5}",
-        },
-      },
-      line: {
-        value: "{colors.gray.6}",
-      },
-      border: {
-        value: "{colors.gray.7}",
-      },
-      focusRing: {
-        value: "{colors.gray.8}",
-      },
-      solid: {
-        DEFAULT: {
-          value: "{colors.gray.9}",
-        },
-        hover: {
-          value: "{colors.gray.10}",
-        },
-      },
-      text: {
-        DEFAULT: {
-          value: "{colors.gray.11}",
-        },
-        contrast: {
-          value: "{colors.gray.12}",
         },
       },
     },

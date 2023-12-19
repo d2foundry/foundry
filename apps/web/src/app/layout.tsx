@@ -1,5 +1,6 @@
 import "./globals.css";
 // import "@foundry/ui/styles.scss";
+import { Inter } from "next/font/google";
 
 import type { Metadata } from "next";
 
@@ -22,21 +23,27 @@ export const metadata: Metadata = {
   },
 };
 
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://use.typekit.net/drz6hcr.css"
-        ></link>
+        ></link> */}
         <meta name="darkreader-lock"></meta>
       </head>
-      <body>
+      <body className={inter.variable}>
         <Client>
           <SiteLayout>{children}</SiteLayout>
         </Client>

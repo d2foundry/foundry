@@ -10,7 +10,12 @@ export default defineConfig({
     "./src/**/*.{js,jsx,ts,tsx}",
     "./node_modules/@foundry/ui/components/**/*.{js,jsx,ts,tsx}",
   ],
-
+  globalCss: {
+    html: {
+      bg: "gray.base",
+      color: "gray.text",
+    },
+  },
   // Files to exclude
   exclude: [],
   separator: "-",
