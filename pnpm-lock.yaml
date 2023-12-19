@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@foundry/eslint-config':
+        specifier: workspace:*
+        version: link:packages/eslint-config
       '@foundry/typescript-config':
         specifier: workspace:*
         version: link:packages/typescript-config
@@ -15,8 +18,8 @@ importers:
         specifier: ^8.48.0
         version: 8.48.0
       prettier:
-        specifier: ^3.0.3
-        version: 3.0.3
+        specifier: ^3.1.0
+        version: 3.1.1
       turbo:
         specifier: latest
         version: 1.9.9
@@ -196,7 +199,7 @@ importers:
         version: 6.15.0(eslint@8.56.0)(typescript@5.2.2)
       '@vercel/style-guide':
         specifier: ^5.1.0
-        version: 5.1.0(eslint@8.56.0)(prettier@3.0.3)(typescript@5.2.2)
+        version: 5.1.0(eslint@8.56.0)(prettier@3.1.1)(typescript@5.2.2)
       eslint-config-prettier:
         specifier: ^9.0.0
         version: 9.0.0(eslint@8.56.0)
@@ -4214,7 +4217,7 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vercel/style-guide@5.1.0(eslint@8.56.0)(prettier@3.0.3)(typescript@5.2.2):
+  /@vercel/style-guide@5.1.0(eslint@8.56.0)(prettier@3.1.1)(typescript@5.2.2):
     resolution: {integrity: sha512-L9lWYePIycm7vIOjDLj+mmMdmmPkW3/brHjgq+nJdvMOrL7Hdk/19w8X583HYSk0vWsq494o5Qkh6x5+uW7ljg==}
     engines: {node: '>=16'}
     peerDependencies:
@@ -4251,8 +4254,8 @@ packages:
       eslint-plugin-testing-library: 6.0.1(eslint@8.56.0)(typescript@5.2.2)
       eslint-plugin-tsdoc: 0.2.17
       eslint-plugin-unicorn: 48.0.1(eslint@8.56.0)
-      prettier: 3.0.3
-      prettier-plugin-packagejson: 2.4.5(prettier@3.0.3)
+      prettier: 3.1.1
+      prettier-plugin-packagejson: 2.4.5(prettier@3.1.1)
       typescript: 5.2.2
     transitivePeerDependencies:
       - eslint-import-resolver-node
@@ -10038,7 +10041,7 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-packagejson@2.4.5(prettier@3.0.3):
+  /prettier-plugin-packagejson@2.4.5(prettier@3.1.1):
     resolution: {integrity: sha512-glG71jE1gO3y5+JNAhC8X+4yrlN28rub6Aj461SKbaPie9RgMiHKcInH2Moi2VGOfkTXaEHBhg4uVMBqa+kBUA==}
     peerDependencies:
       prettier: '>= 1.16.0'
@@ -10046,7 +10049,7 @@ packages:
       prettier:
         optional: true
     dependencies:
-      prettier: 3.0.3
+      prettier: 3.1.1
       sort-package-json: 2.5.1
       synckit: 0.8.5
     dev: true
@@ -10056,9 +10059,10 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  /prettier@3.0.3:
-    resolution: {integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==}
+  /prettier@3.1.1:
+    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
     engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /process-nextick-args@2.0.1:

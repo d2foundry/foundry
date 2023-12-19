@@ -2,10 +2,10 @@ import "./globals.css";
 // import "@foundry/ui/styles.scss";
 import { Inter } from "next/font/google";
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 import { SiteLayout } from "./site-layout";
-import { Client } from "./client";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Foundry",
@@ -17,10 +17,11 @@ export const metadata: Metadata = {
     statusBarStyle: "black",
     title: "Foundry",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 const inter = Inter({
@@ -44,9 +45,9 @@ export default function RootLayout({
         <meta name="darkreader-lock"></meta>
       </head>
       <body className={inter.variable}>
-        <Client>
+        <Providers>
           <SiteLayout>{children}</SiteLayout>
-        </Client>
+        </Providers>
       </body>
     </html>
   );
