@@ -1,5 +1,5 @@
 {
-  "extends": "@foundry/tsconfig/nextjs.json",
+  "extends": "@foundry/typescript-config/nextjs.json",
   "compilerOptions": {
     "plugins": [{ "name": "next" }],
     "paths": {

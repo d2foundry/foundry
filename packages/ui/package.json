@@ -67,8 +67,8 @@
   },
   "devDependencies": {
     "@foundry/design-system": "workspace:*",
-    "@foundry/eslint-config-custom": "workspace:*",
-    "@foundry/tsconfig": "workspace:*",
+    "@foundry/eslint-config": "workspace:*",
+    "@foundry/typescript-config": "workspace:*",
     "@next/eslint-plugin-next": "^13.4.19",
     "@pandacss/dev": "^0.21.0",
     "@pandacss/types": "^0.21.0",

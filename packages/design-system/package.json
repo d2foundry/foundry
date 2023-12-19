@@ -18,8 +18,8 @@
     "ts-pattern": "^5.0.6"
   },
   "devDependencies": {
-    "@foundry/eslint-config-custom": "workspace:*",
-    "@foundry/tsconfig": "workspace:*",
+    "@foundry/eslint-config": "workspace:*",
+    "@foundry/typescript-config": "workspace:*",
     "@pandacss/dev": "^0.21.0",
     "@pandacss/types": "^0.21.0",
     "@types/node": "^17.0.12",
