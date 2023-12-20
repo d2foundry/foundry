@@ -23,4 +23,5 @@ export default defineConfig({
   outdir: "@foundry/styled-system",
   outExtension: "js",
   emitPackage: true,
+  emitTokensOnly: true,
 });

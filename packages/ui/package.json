@@ -4,6 +4,10 @@
   "main": "./index.tsx",
   "types": "./index.tsx",
   "exports": {
+    ".": {
+      "import": "./components/index.tsx",
+      "types": "./components/index.tsx"
+    },
     "./components": {
       "import": "./components/index.tsx",
       "types": "./components/index.tsx"
@@ -16,16 +20,16 @@
       "types": "./utils/index.ts",
       "import": "./utils/index.ts"
     },
-    "./styles.scss": {
-      "import": "./design-system/globals.scss",
-      "require": "./design-system/globals.scss",
-      "default": "./design-system/globals.scss"
+    "./styles.css": {
+      "import": "./dist/styles.css",
+      "require": "./dist/styles.css",
+      "default": "./dist/styles.css"
     }
   },
   "license": "MIT",
   "scripts": {
     "prepare": "panda codegen --clean",
-    "ship": "panda ship --outfile ./panda.buildinfo.json",
+    "cssgen": "pnpm panda cssgen -o dist/styles.css",
     "lint": "eslint .",
     "generate:component": "turbo gen react-component"
   },

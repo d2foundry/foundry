@@ -16,7 +16,7 @@ import {
   dialogContent,
   dialogOverlay,
 } from "@foundry/styled-system/recipes";
-import { Box } from "./box";
+import { Box } from "./box/box";
 
 export const Dialog = DialogPrimitive.Root;
 export const DialogTrigger = DialogPrimitive.Trigger;

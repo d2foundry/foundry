@@ -16,6 +16,22 @@ export default defineConfig({
       color: "gray.text",
     },
   },
+  staticCss: {
+    css: [
+      {
+        properties: {
+          margin: ["*"],
+          padding: ["*"],
+          gap: ["*"],
+        },
+        responsive: true,
+      },
+    ],
+    recipes: {
+      text: ["*"],
+      heading: ["*"],
+    },
+  },
   // Files to exclude
   exclude: [],
   separator: "-",
