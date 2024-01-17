@@ -1,22 +1,25 @@
-import * as React from "react";
+import { ReactNode, forwardRef, HTMLAttributes } from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cn } from "../../utils";
 
-import styles from "./Heading.module.scss";
-
-interface Props {
-  children?: React.ReactNode;
+interface Props extends HTMLAttributes<HTMLHeadingElement> {
+  children?: ReactNode;
   as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   asChild?: never;
 }
 
-export const Heading = React.forwardRef<
-  HTMLHeadingElement,
-  Props & React.HTMLAttributes<HTMLHeadingElement>
->(({ children, className, asChild = false, as: Tag = "h1", ...rest }, ref) => {
-  return (
-    <Slot {...rest} ref={ref} className={cn(styles.Heading, className)}>
-      {asChild ? children : <Tag>{children}</Tag>}
-    </Slot>
-  );
-});
+export const Heading = forwardRef<HTMLHeadingElement, Props>(
+  ({ children, className, asChild = false, as: Tag = "h1", ...rest }, ref) => {
+    const headingStyle = {
+      heading1: Tag === "h1",
+      heading2: Tag === "h2",
+      heading3: Tag === "h3",
+      heading4: Tag === "h4",
+    };
+    return (
+      <Slot {...rest} ref={ref} className={cn(headingStyle, className)}>
+        {asChild ? children : <Tag>{children}</Tag>}
+      </Slot>
+    );
+  }
+);
