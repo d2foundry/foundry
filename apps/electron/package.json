@@ -1,0 +1,43 @@
+{
+  "name": "@foundry/electron",
+  "version": "1.0.0",
+  "description": "Desktop app for Foundry, a Destiny 2 weapon roll explorer and buildcrafting tool.",
+  "author": "d2foundry",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "prepare-resources": "node scripts/prepare-resources.js",
+    "start": "pnpm prepare-resources && electron .",
+    "dist": "pnpm prepare-resources && electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^30.5.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "electronVersion": "30.5.1",
+    "appId": "gg.d2foundry.desktop",
+    "productName": "Foundry",
+    "directories": {
+      "output": "dist",
+      "buildResources": "icons"
+    },
+    "files": [
+      "main.js",
+      "package.json"
+    ],
+    "extraResources": [
+      { "from": "resources/app-server", "to": "app-server" },
+      { "from": "resources/node", "to": "node" }
+    ],
+    "win": {
+      "target": [
+        { "target": "nsis", "arch": ["x64"] }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

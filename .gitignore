@@ -38,3 +38,13 @@ yarn-error.log*
 # contentlayer
 .contentlayer
 synced/**/*
+
+# electron packaging
+apps/electron/resources
+apps/electron/dist
+
+# local sqlite database
+src/lib/database/sqlite.db
+
+# portable node runtime used to build the electron bundle
+/tools

@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/prepareStandalone.js",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "tsx scripts/seedDatabase.ts"
   },
   "dependencies": {
     "@foundry/search": "github:d2foundry/search.git",
@@ -34,6 +35,7 @@
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
     "drizzle-kit": "^0.19.13",
-    "typescript": "^4.5.3"
+    "typescript": "^4.5.3",
+    "tsx": "^4.7.0"
   }
 }
